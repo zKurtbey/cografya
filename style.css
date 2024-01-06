@@ -6,12 +6,8 @@ body{
   display: flex;
   margin: 0;
 }
-:root{
-  --bg-clr: rgb(42, 22, 78);
-  --yzi-clr: rgb(240, 232, 255);
-}
 .ust{
-  background-color: var(--bg-clr);
+  background-color: rgb(42, 22, 78);
   height: 6em;
   width: 100%;
   display: flex;
@@ -35,7 +31,7 @@ body{
   align-items: center;
   justify-content: center;
   text-align: left;
-  background-color: var(--bg-clr);
+  background-color: rgb(42, 22, 78);
 }
 .sorucesitleri{
   display: flex;
@@ -43,7 +39,7 @@ body{
   align-items: center;
   justify-content: space-between;
   text-align: left;
-  background-color: var(--bg-clr);
+  background-color: rgb(42, 22, 78);
   font-family: system-ui, helvetica;
   font-size: 15px;
   position: absolute;
@@ -59,7 +55,7 @@ body{
   left: 2.5em;
 }
 #siteadi{
-  color: var(--yzi-clr);
+  color: rgb(240, 232, 255);
   font-family: system-ui, helvetica;
   position: absolute;
   top: 2em;
@@ -79,14 +75,14 @@ body{
 }
 .matematik{
   font-size: 10px;
-  color: var(--yzi-clr);
+  color: rgb(240, 232, 255);
   text-decoration: underline;
   position: absolute;
   left: .5em;
 }
 .yazilim{
   font-size: 10px;
-  color: var(--yzi-clr);
+  color: rgb(240, 232, 255);
   text-decoration: underline;
   position: absolute;
   right: .5em;
@@ -97,7 +93,7 @@ body{
   right: .5em;
   height: 2em;
   width: 2em;
-  background-color: var(--yzi-clr);
+  background-color: rgb(240, 232, 255);
 }
 
 
@@ -124,7 +120,7 @@ body{
 }
 .sorubaslik{
   font-family: system-ui, helvetica;
-  color: var(--yzi-clr);
+  color: rgb(240, 232, 255);
   font-weight: bold;
 }
 .suk{
@@ -141,7 +137,7 @@ body{
 .cevap{
   font-family: system-ui, helvetica;
   font-weight: bold;
-  color: var(--yzi-clr);
+  color: rgb(240, 232, 255);
   padding: .5em;
 }
 
