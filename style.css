@@ -70,7 +70,7 @@ body{
 #siteadi{
   color: rgb(240, 232, 255);
   font-family: system-ui, helvetica;
-  position: relative;
+  position: absolute;
   margin-left: 7em;
   font-weight: bolder;
 }
