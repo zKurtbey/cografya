@@ -6,7 +6,7 @@ body{
   display: flex;
   margin: 0;
 }
-::root{
+:root{
   --bg-clr: rgb(42, 22, 78);
   --yzi-clr: rgb(240, 232, 255);
 }
