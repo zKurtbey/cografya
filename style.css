@@ -23,12 +23,9 @@ body{
   left: 0;
   box-shadow: rgb(56 38 88) 0px 0px 15px;
 }
-.accesit{
-  width: 4em;
-  height: 4em;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: rgb(50, 50, 50) 0px 0px 5px;
+#down-arrow{
+  height: 45px;
+  font-size: 20px;
   position: absolute;
   left: 1em;
 }
