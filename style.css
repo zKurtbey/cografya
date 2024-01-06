@@ -26,6 +26,7 @@ body{
   box-shadow: rgb(50, 50, 50) 0px 0px 5px;
 }
 .cesit{
+  list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,6 +73,7 @@ body{
   right: 2em;
   width: 5em;
   height: 2.5em;
+  list-style: none;
 }
 .matematik{
   font-size: 10px;
