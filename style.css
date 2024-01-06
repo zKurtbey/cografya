@@ -1,0 +1,163 @@
+html{
+  width: 100%;
+  height: 100%;
+}
+body{
+  display: flex;
+  margin: 0;
+}
+::root{
+  --bg-clr: rgb(42, 22, 78);
+  --yzi-clr: rgb(240, 232, 255);
+}
+.ust{
+  background-color: var(--bg-clr);
+  height: 6em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.accesit{
+  width: 2em;
+  height: 2em;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgb(50, 50, 50) 0px 0px 5px;
+}
+.cesit{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  background-color: var(--bg-clr);
+}
+.sorucesitleri{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  background-color: var(--bg-clr);
+  font-family: system-ui, helvetica;
+  font-size: 15px;
+  position: absolute;
+  top: 2em;
+  right: .5em;
+  color: rgb(210, 190, 230);
+}
+#earth{
+  font-size: 15px;
+  height: 15px;
+  width: 15px;
+  top: 2em;
+  left: 2.5em;
+}
+#siteadi{
+  color: var(--yzi-clr);
+  font-family: system-ui, helvetica;
+  position: absolute;
+  top: 2em;
+  left: 4em;
+  font-weight: bolder;
+}
+.digeryarismalar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  width: 5em;
+  height: 2.5em;
+}
+.matematik{
+  font-size: 10px;
+  color: var(--yzi-clr);
+  text-decoration: underline;
+  position: absolute;
+  left: .5em;
+}
+.yazilim{
+  font-size: 10px;
+  color: var(--yzi-clr);
+  text-decoration: underline;
+  position: absolute;
+  right: .5em;
+}
+.ustukapat{
+  position: absolute;
+  top: 2em;
+  right: .5em;
+  height: 2em;
+  width: 2em;
+  background-color: var(--yzi-clr);
+}
+
+
+/*soru alanı*/
+
+.sorualani{
+  background-color: rgb(50, 10, 90);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.soru{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  height: 25em;
+  width: 20em;
+  border-radius: 3em;
+  bacgkround-color: rgba(40, 20, 80, .4);
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(40, 20, 80, .7);
+}
+.sorubaslik{
+  font-family: system-ui, helvetica;
+  color: var(--yzi-clr);
+  font-weight: bold;
+}
+.suk{
+  height: 4em;
+  width: 10em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(40, 20, 80, .4);
+  box-shadow: rgba(40, 20, 80, .7)
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+.cevap{
+  font-family: system-ui, helvetica;
+  font-weight: bold;
+  color: var(--yzi-clr);
+  padding: .5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
