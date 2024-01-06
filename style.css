@@ -23,10 +23,13 @@ body{
   left: 0;
   box-shadow: rgb(56 38 88) 0px 0px 15px;
 }
-#down-arrow{
-  height: 45px;
+.accesit{
+  width: 45px;
   position: relative;
   left: 1em;
+}
+#down-arrow{
+  height: 45px;
 }
 .cesit{
   flex-direction: column;
@@ -90,6 +93,9 @@ body{
 }
 #top-alignment{
   height: 35px;
+}
+.ustukapat{
+  width: 35px;
   position: absolute;
   right: 2em;
 }
