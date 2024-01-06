@@ -5,10 +5,14 @@ html{
 body{
   display: flex;
   margin: 0;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: linear-gradient(45deg, #171818, rgb(51 5 134));
 }
 .ust{
-  background-color: rgb(42, 22, 78);
-  height: 6em;
+  background-color: rgb(56 38 88);
+  height: 8em;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -17,148 +21,154 @@ body{
   position: absolute;
   top: 0;
   left: 0;
+  box-shadow: rgb(56 38 88) 0px 0px 15px;
 }
 .accesit{
-  width: 2em;
-  height: 2em;
+  width: 4em;
+  height: 4em;
   background-color: white;
   border-radius: 5px;
   box-shadow: rgb(50, 50, 50) 0px 0px 5px;
+  position: absolute;
+  left: 1em;
 }
 .cesit{
-  list-style: none;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  padding-left: 1em;
+  justify-content: flex-start;
   text-align: left;
-  background-color: rgb(42, 22, 78);
-}
-.sorucesitleri{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  text-align: left;
-  background-color: rgb(42, 22, 78);
-  font-family: system-ui, helvetica;
-  font-size: 15px;
+  background-color: rgba(42, 22, 78, 0.5);
   position: absolute;
-  top: 2em;
-  right: .5em;
-  color: rgb(210, 190, 230);
+  width: 15em;
+  height: 67em;
+  top: 8em;
+  box-shadow: rgb(42, 22, 78) 0px 0px 5px;
+  backdrop-filter: blur(10px);
+  display: none;
+}
+.soruces{
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-family: system-ui, helvetica;
+  font-size: 17.5px;
+  color: rgba(250, 220, 250, .8);
+  cursor: pointer;
+  width: 6em;
+  display: inline-block;
+}
+.soruces:hover{
+  display: inline-block;
+  text-decoration: underline;
+  color: rgb(170, 150, 170);
 }
 #earth{
   font-size: 15px;
-  height: 15px;
-  width: 15px;
-  top: 2em;
-  left: 2.5em;
+  height: 80px;
+  position: absolute;
+  left: 5em;
+  filter: drop-shadow(0px 0px 10px #6e6db3);
 }
 #siteadi{
   color: rgb(240, 232, 255);
   font-family: system-ui, helvetica;
-  position: absolute;
-  top: 2em;
-  left: 4em;
+  position: relative;
+  margin-left: 7em;
   font-weight: bolder;
 }
 .digeryarismalar{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   position: absolute;
-  top: 2em;
-  right: 2em;
-  width: 5em;
-  height: 2.5em;
-  list-style: none;
+  top: 0;
+  right: 5em;
+  width: 15em;
+  height: 8em;
 }
 .matematik{
-  font-size: 10px;
+  font-size: 17.5px;
   color: rgb(240, 232, 255);
-  text-decoration: underline;
-  position: absolute;
-  left: .5em;
 }
 .yazilim{
-  font-size: 10px;
+  font-size: 17.5px;
   color: rgb(240, 232, 255);
-  text-decoration: underline;
-  position: absolute;
-  right: .5em;
 }
 .ustukapat{
   position: absolute;
-  top: 2em;
   right: .5em;
-  height: 2em;
-  width: 2em;
+  height: 4em;
+  width: 4em;
   background-color: rgb(240, 232, 255);
+  border-radius: 5px;
 }
 
 
 /*soru alanı*/
-
-.sorualani{
-  background-color: rgb(50, 10, 90);
+.buyuksorualani{
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  height: 77.5em;
+  width: 100%;
+  align-self: center;
+}
+.sorualani{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 28em;
+  height: 45em;
+  background-color: rgba(50, 0, 120, .2);
+  backdrop-filter: blur(15px);
+  border-radius: 1.25em;
+  border: solid 0.1px rgb(231 231 228 / 50%);
+  backdrop-filter: drop-shadow(rgb(237 237 234 / 60%) 0 0 20px);
 }
 .soru{
   align-items: center;
   justify-content: center;
   text-align: center;
   display: flex;
-  height: 25em;
-  width: 20em;
-  border-radius: 3em;
-  bacgkround-color: rgba(40, 20, 80, .4);
-  backdrop-filter: blur(10px);
-  box-shadow: rgba(40, 20, 80, .7);
+  position: relative;
+  height: 15em;
+  width: 25em;
+  border-radius: 2em;
+  background: rgb(0 0 0 / 20%);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgb(243 21 21 / 50%);
 }
-.sorubaslik{
+#sorubaslik{
+  font-size: 20px;
   font-family: system-ui, helvetica;
   color: rgb(240, 232, 255);
   font-weight: bold;
 }
+.siklar{
+  margin-top: .5em;
+  display: grid;
+  grid-template-rows: 5em 5em 5em 5em 5em;
+  align-items: center;
+  justify-content: center;
+}
 .suk{
   height: 4em;
-  width: 10em;
+  width: 25em;
+  border-radius: 1em;
+  display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-color: rgba(40, 20, 80, .4);
-  box-shadow: rgba(40, 20, 80, .7)
-  margin-top: .5em;
-  margin-bottom: .5em;
+  background-color: rgb(4 4 4 / 40%);
+  border: solid 0.1px rgba(239, 254, 10, .5);
 }
 .cevap{
   font-family: system-ui, helvetica;
   font-weight: bold;
   color: rgb(240, 232, 255);
-  padding: .5em;
+  font-size: 17.5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
