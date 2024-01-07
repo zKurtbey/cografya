@@ -12,7 +12,7 @@ if(soru.includes("volkanik" && "dağ")){
   dogrucvp.innerHTML="Ağrı Dağı";
   siklar = siklar - "Ağrı Dağı";
   console.log(dogrucvpsikki);
-  dogrucvpsikki.forEach((dogrucvpsikki){
+  dogrucvpsikki.forEach((dogrucvpsikki) => {
     suk = siklar[Math.floor(Math.random() * siklar.length)];
     dogrucvpsikki.innerHTML = suk;
     siklar = siklar - suk;
@@ -25,7 +25,7 @@ if(soru.includes("volkanik" && "dağ")){
   dogrucvp.classList.remove("cevap");
   siklar = siklar - "Yer Kabuğu";
   console.log(dogrucvpsikki);
-  dogrucvpsikki.forEach((cevap) => {
+  dogrucvpsikki.forEach((dogrucvpsikki) => {
     suk = siklar[Math.floor(Math.random() * siklar.length)];
     dogrucvpsikki.innerHTML = suk;
     siklar = siklar - suk;
