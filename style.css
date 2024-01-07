@@ -3,10 +3,7 @@ html{
   height: 100%;
   overflow: hidden;
 }
-html{
-  width: 100%;
-  height: 100%;
-}
+
 @media(max-width: 1023px){
 body{
   display: flex;
@@ -19,7 +16,7 @@ body{
 }
 .ust{
   background-color: rgb(56 38 88);
-  height: 16em;
+  height: 12em;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -31,10 +28,10 @@ body{
   box-shadow: rgb(56 38 88) 0px 0px 15px;
 }
 .accesit{
-  height: 90px;
-  width: 90px;
+  height: 67.5px;
+  width: 67.5px;
   position: relative;
-  left: 1em;
+  left: 2.25em;
   border-radius: 20px;
   transition: all .20s ease-in-out;
   cursor: pointer;
@@ -47,27 +44,27 @@ body{
   background-color: #34425c9c;
 }
 #down-arrow{
-  height: 95px;
-  margin-top: 5px;
+  height: 71.25px;
+  margin-top: 7.5px;
 }
 .cesit{
   flex-direction: column;
   align-items: left;
-  padding-left: 1em;
+  padding-left: 2.25em;
   justify-content: flex-start;
   text-align: left;
   background-color: rgb(28 12 57);
   position: absolute;
-  width: 20em;
-  height: 167em;
-  top: 16em;
+  width: 22.5em;
+  height: 100.5em;
+  top: 12em;
   box-shadow: rgb(0 0 0 / 50%) 0px 0px 15px;
   backdrop-filter: blur(50px);
-  transition: all .5s ease-in-out;
   display: none;
 }
 .soruces{
-  margin-top: 3em;
+  margin-top: 2.25em;
+  margin-bottom: 2.25em;
   font-family: system-ui, helvetica;
   font-size: 22.5px;
   color: rgba(250, 220, 250, .8);
@@ -82,19 +79,19 @@ body{
   color: rgb(170, 150, 170);
 }
 #earth{
-  font-size: 15px;
-  height: 160px;
+  font-size: 22.5px;
+  height: 120px;
   position: absolute;
-  left: 7.5em;
+  left: 5em;
   filter: drop-shadow(0px 0px 10px #6e6db3);
 }
 #siteadi{
   color: rgb(240, 232, 255);
   font-family: system-ui, helvetica;
   position: absolute;
-  margin-left: 8em;
+  margin-left: 8.5em;
   font-weight: bolder;
-  font-size: 35px;
+  font-size: 30px;
 }
 .digeryarismalar{
   display: flex;
@@ -102,9 +99,9 @@ body{
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: 12.5em;
-  width: 100px;
-  height: 100px;
+  right: 11em;
+  width: 75px;
+  height: 75px;
   border-radius: 20px;
   transition: all .20s ease-in-out;
   cursor: pointer;
@@ -113,21 +110,21 @@ body{
   background-color: #34425c9c;
 }
 #code{
-  height: 80px;
+  height: 60px;
   color: rgb(240, 232, 255);
 }
 #top-alignment{
-  height: 70px;
+  height: 52.5px;
 }
 .ustukapat{
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
-  width: 90px;
-  height: 90px;
+  width: 67.75px;
+  height: 67.75px;
   position: relative;
-  right: 2em;
+  right: 3em;
   border-radius: 20px;
   transition: all .20s ease-in-out;
   cursor: pointer;
@@ -138,34 +135,42 @@ body{
 /*sun*/
 .sun{
   position: absolute;
-  height: 90em;
-  width: 90em;
+  height: 70em;
+  width: 70em;
   background-image: linear-gradient(45deg,#916a2eeb, #978f23eb,#afa526eb,#a39b34eb,#a39b34eb, #ffb307);
   border-radius: 50%;
   box-shadow: 0px 0px 25px rgb(253 168 13 / 96%);
-  left: -40em;
-  bottom: -40em;
+  left: -30em;
+  bottom: -30em;
   z-index: 3;
   overflow: hidden;
 }
 /*mercure*/
 .mercure{
-  display: none;
+  height: 10em;
+  width: 10em;
+  z-index: 0;
+  right: 40em;
+  bottom: 20em;
+  border-radius: 50%;
+  background-image: linear-gradient(45deg,#f90b0bf5, #261515f5);
+  box-shadow: 0 0 50px #490d12;
+  position: absolute;
 }
 /*moon*/
 .moon{
   position: absolute;
-  width: 15em;
-  height: 15em;
+  width: 10em;
+  height: 10em;
   border-radius: 50%;
   background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22);
-  bottom: 50em;
-  right: 37.5em;
+  bottom: 32.5em;
+  right: 32em;
   z-index: 1;
   box-shadow: 0 0 15px #444648;
 }
 @keyframes uydu{
-  0%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 55em; right: 42.5em; z-index: 1;}
+  0%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 32.5em; right: 32em; z-index: 1;}
   10%{background-image: linear-gradient(100deg, #d6d2d2, #d2d2d8, #3b3c3d);}
   14%{background-image: linear-gradient(100deg, #bdbaba, #bbbbc1, #4e4f50);}
   18%{background-image: linear-gradient(100deg, #a19d9d, #a0a0a5, #636567);}
@@ -173,23 +178,23 @@ body{
   26%{background-image: linear-gradient(100deg, #747479, #777474, #8c8e90);}
   30%{background-image: linear-gradient(100deg, #9a9a9d, #bcb8b8, #b5b5ba);}
   40%{background-image: linear-gradient(100deg, #727276, #aaa6a6, #e7e8e8);}
-  50%{background-image: linear-gradient(100deg, #525255, #c1bcbc, #ffffff); bottom: 25em; right: 0em; display: none;}
-  60%{background-image: linear-gradient(100deg, #727276, #aaa6a6, #e7e8e8); display: none;}
-  70%{background-image: linear-gradient(100deg, #9a9a9d, #bcb8b8, #b5b5ba); display: none;}
-  74%{background-image: linear-gradient(100deg, #747479, #777474, #4e4f50); display: none;}
-  78%{background-image: linear-gradient(100deg, #888585, #8d8d90, #7a7d80); display: none;}
-  82%{background-image: linear-gradient(100deg, #a19d9d, #a0a0a5, #636567); display: none;}
-  86%{background-image: linear-gradient(100deg, #bdbaba, #bbbbc1, #4e4f50); display: none;}
-  90%{background-image: linear-gradient(100deg, #d6d2d2, #d2d2d8, #3b3c3d); display: none;}
-  100%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 55em; right: 42.5em; z-index: 0;}
+  50%{background-image: linear-gradient(100deg, #525255, #c1bcbc, #ffffff); bottom: 0em; right: 0em; display: none;}
+  60%{background-image: linear-gradient(100deg, #727276, #aaa6a6, #e7e8e8);}
+  70%{background-image: linear-gradient(100deg, #9a9a9d, #bcb8b8, #b5b5ba);}
+  74%{background-image: linear-gradient(100deg, #747479, #777474, #4e4f50);}
+  78%{background-image: linear-gradient(100deg, #888585, #8d8d90, #7a7d80);}
+  82%{background-image: linear-gradient(100deg, #a19d9d, #a0a0a5, #636567);}
+  86%{background-image: linear-gradient(100deg, #bdbaba, #bbbbc1, #4e4f50);}
+  90%{background-image: linear-gradient(100deg, #d6d2d2, #d2d2d8, #3b3c3d);}
+  100%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 32.5em; right: 32em; z-index: 0;}
 }
 /*world*/
 .world{
   position: absolute;
-  width: 45em;
-  height: 45em;
-  right: 0em;
-  bottom: 25em;
+  width: 35em;
+  height: 35em;
+  right: 2em;
+  bottom: 5em;
   background-image: linear-gradient(75deg, #1466ad, #21272d);
   border-radius: 50%;
   box-shadow: -5px 5px 2em #3175b1cf,
@@ -198,22 +203,22 @@ body{
 }
 .greens{
   position: absolute;
-  width: 30em;
-  height: 30em;
+  width: 20em;
+  height: 20em;
   background-image: linear-gradient(100deg, #01ff40, #1d5134);
   transform: rotate(-45deg);
-  right: 27.5em;
-  bottom: 25em;
+  right: 17.5em;
+  bottom: 15em;
   border-bottom-left-radius: 90%;
   border-bottom-right-radius: 30%;
 }
 .cloud{
   position: absolute;
-  width: 55em;
-  height: 27.5em;
+  width: 30em;
+  height: 17.5em;
   background-image: linear-gradient(45deg, #f8f7f7f5, #6f7c88bf);
   right: 10em;
-  bottom: 10em;
+  bottom: 5em;
   border-top-right-radius: 20%;
   border-bottom-right-radius: 50%;
   transform: rotate(25deg);
@@ -291,16 +296,16 @@ body{
   text-shadow: 0 0 10px rgb(25 26 26 / 50%);
 }
 .sorualani{
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 56em;
-  height: 90em;
+  width: 42em;
+  height: 67.5em;
   background-color: rgb(0 0 48 / 25%);
   backdrop-filter: blur(50px);
-  border-radius: 2.5em;
+  border-radius: 1.25em;
   scale: 1;
   transition: all .25s ease-in-out;
   z-index: 2;
@@ -316,10 +321,10 @@ body{
   text-align: center;
   display: flex;
   position: relative;
-  height: 30em;
-  width: 50em;
-  border-radius: 4em;
-  backdrop-filter: blur(30px);
+  height: 22.5em;
+  width: 37.5em;
+  border-radius: 3em;
+  backdrop-filter: blur(15px);
   box-shadow: rgba(0, 0, 0, .7) 0 0 25px;
   transition: all .25s ease-in-out;
 }
@@ -329,30 +334,30 @@ body{
   text-align: center;
   display: flex;
   position: relative;
-  height: 30em;
-  width: 50em;
+  height: 22.5em;
+  width: 37.5em;
   border-radius: 2em;
   backdrop-filter: blur(15px);
   box-shadow: rgb(240 56 56 / 70%) 0 0 25px;
 }
 #sorubaslik{
-  font-size: 40px;
+  font-size: 20px;
   font-family: system-ui, helvetica;
   color: rgb(240, 232, 255);
   font-weight: bold;
-  margin: 0 1em 0 1em;
+  margin: 0 .5em 0 .5em;
 }
 .siklar{
-  margin-top: 1em;
+  margin-top: .75em;
   display: grid;
-  grid-template-rows: 10em 10em 10em 10em 10em;
+  grid-template-rows: 7.5em 7.5em 7.5em 7.5em 7.5em;
   align-items: center;
   justify-content: center;
 }
 .suk{
-  height: 8em;
-  width: 50em;
-  border-radius: 2em;
+  height: 6em;
+  width: 37.5em;
+  border-radius: 1.5em;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -365,9 +370,9 @@ body{
   opacity: 0;
 }
 .suk:hover{
-  height: 8em;
-  width: 50em;
-  border-radius: 2em;
+  height: 6em;
+  width: 37.5em;
+  border-radius: 1.5em;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -383,7 +388,7 @@ body{
 .cevap{
   font-family: system-ui, helvetica;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 22.75px;
   color: transparent;
   transition: all .35s ease;
   color: rgb(240 232 255 / 80%);
@@ -396,9 +401,14 @@ body{
   font-family: system-ui, helvetica;
   font-weight: bold;
   color: rgb(240, 232, 255);
-  font-size: 17.5px;
+  font-size: 22.75px;
 }
 }
+
+
+
+
+
 @media(min-width: 1024px){
 body{
   display: flex;
@@ -558,13 +568,13 @@ body{
   height: 10em;
   border-radius: 50%;
   background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22);
-  bottom: 30em;
-  right: 27.5em;
+  bottom: 32.5em;
+  right: 30em;
   z-index: 1;
   box-shadow: 0 0 15px #444648;
 }
 @keyframes uydu{
-  0%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 30em; right: 27.5em; z-index: 1;}
+  0%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 32.5em; right: 30em; z-index: 1;}
   10%{background-image: linear-gradient(100deg, #d6d2d2, #d2d2d8, #3b3c3d);}
   14%{background-image: linear-gradient(100deg, #bdbaba, #bbbbc1, #4e4f50);}
   18%{background-image: linear-gradient(100deg, #a19d9d, #a0a0a5, #636567);}
@@ -572,7 +582,7 @@ body{
   26%{background-image: linear-gradient(100deg, #747479, #777474, #8c8e90);}
   30%{background-image: linear-gradient(100deg, #9a9a9d, #bcb8b8, #b5b5ba);}
   40%{background-image: linear-gradient(100deg, #727276, #aaa6a6, #e7e8e8);}
-  50%{background-image: linear-gradient(100deg, #525255, #c1bcbc, #ffffff); bottom: 0em; right: -45em; display: none;}
+  50%{background-image: linear-gradient(100deg, #525255, #c1bcbc, #ffffff); bottom: 0em; right: 0; display: none;}
   60%{background-image: linear-gradient(100deg, #727276, #aaa6a6, #e7e8e8);}
   70%{background-image: linear-gradient(100deg, #9a9a9d, #bcb8b8, #b5b5ba);}
   74%{background-image: linear-gradient(100deg, #747479, #777474, #4e4f50);}
@@ -580,14 +590,14 @@ body{
   82%{background-image: linear-gradient(100deg, #a19d9d, #a0a0a5, #636567);}
   86%{background-image: linear-gradient(100deg, #bdbaba, #bbbbc1, #4e4f50);}
   90%{background-image: linear-gradient(100deg, #d6d2d2, #d2d2d8, #3b3c3d);}
-  100%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 30em; right: 27.5em; z-index: 0;}
+  100%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 32.5em; right: 30em; z-index: 0;}
 }
 /*world*/
 .world{
   position: absolute;
   width: 35em;
   height: 35em;
-  right: -10em;
+  right: 0em;
   bottom: 5em;
   background-image: linear-gradient(75deg, #1466ad, #21272d);
   border-radius: 50%;
