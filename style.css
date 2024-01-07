@@ -165,7 +165,6 @@ body{
   right: 20em;
   z-index: 1;
   box-shadow: 0 0 15px #444648;
-  animation: uydu 5s ease-in-out infinite;
 }
 @keyframes uydu{
   0%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 30em; right: 27.5em; z-index: 1;}
@@ -237,8 +236,6 @@ body{
 }
 #brdr{
   position: absolute;
-  right: 5em;
-  bottom: 5em;
   display: flex;
   align-items: center;
   justify-content: center;
