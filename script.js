@@ -6,18 +6,21 @@ var suk;
 var cvplr = document.querySelectorAll(".cevap");
 var dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]]; 
 var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
+var yzlnsk = [];
+var yzlnskkldr;
 if(soru.includes("volkanik" && "dağ")){
   dogrucvp.innerHTML="Ağrı Dağı";
+  yzlnsk = siklar.indexOf(dogrucvp);
+  yzlnskkldr = siklar.splice(yzlnsk, 1);
 } else if(soru.includes("en" && "ince katmanıdır")){
   dogrucvp.innerHTML="Yer Kabuğu";
+  yzlnsk = siklar.indexOf(dogrucvp);
+  yzlnskkldr = siklar.splice(yzlnsk, 1);
 } else if(soru.includes("2.900km" && "6.300km")){
-  dogrucvp.innerHTML="Çekirdek"; 
+  dogrucvp.innerHTML="Çekirdek";
+  yzlnsk = siklar.indexOf(dogrucvp);
+  yzlnskkldr = siklar.splice(yzlnsk, 1);
 }
-var yzlnsk = [];
-yzlnsk = siklar.indexOf(dogrucvp);
-var yzlnskkldr = siklar.splice(yzlnsk, 1);
-var yzlncvp = dogrucvpsikki.indexOf(dogrucvp);
-var yzlncvpkldr = dogrucvpsikki.splice(yzlncvp, 1);
 dogrucvpsikki.forEach((dogrucvpsikki) => {
   suk = siklar[Math.floor(Math.random() * siklar.length)];
   dogrucvpsikki.innerHTML = suk;
