@@ -8,17 +8,11 @@ var dogrucvpsikki = document.querySelectorAll(".cevap");
 var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
 if(soru.includes("volkanik" && "dağ")){
   dogrucvp.innerHTML="Ağrı Dağı";
-  siklar = siklar - "Ağrı Dağı";
+  siklar = [siklar - "Ağrı Dağı"];
 } else if(soru.includes("en" && "ince katmanıdır")){
   dogrucvp.innerHTML="Yer Kabuğu";
-  siklar = siklar - "Yer Kabuğu";
+  siklar = [siklar - "Yer Kabuğu"];
 } else if(soru.includes("2.900km" && "6.300km")){
   dogrucvp.innerHTML="Çekirdek";
-  siklar = siklar - "Çekirdek";
+  siklar = [siklar - "Çekirdek"];
 }
-  dogrucvp.classList.add("cevaps");
-  dogrucvp.classList.remove("cevap");
-  dogrucvpsikki.forEach((dogrucvpsikki) => {
-    suk = siklar[Math.floor(Math.random() * siklar.length)];
-    dogrucvpsikki.innerHTML = suk;
-  });
