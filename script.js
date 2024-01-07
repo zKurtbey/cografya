@@ -9,10 +9,10 @@ if(soru.includes("volkanik" && "dağ")){
   var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
   dogrucvp.innerHTML="Ağrı Dağı";
   siklar = siklar - "Ağrı Dağı";
-  cvplr = cvplr - dogrucvp;
-  cvplr.forEach((cvplr) =>{
+  const klnsklr = cvplr - dogrucvp;
+  klnsklr.forEach((klnsklr) =>{
     suk = siklar[Math.floor(Math.random() * siklar.length)];
-    cvplr.innerHTML = suk;
+    klnsklr.innerHTML = suk;
     siklar = siklar - suk;
   });
 } else if(soru.includes("en" && "ince katmanıdır")){
@@ -20,10 +20,10 @@ if(soru.includes("volkanik" && "dağ")){
   var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
   dogrucvp.innerHTML="Yer Kabuğu";
   siklar = siklar - "Yer Kabuğu";
-  cvplr = cvplr - dogrucvp;
-  cvplr.forEach((cvplr) =>{
+  const klnsklr = cvplr - dogrucvp;
+  klnsklr.forEach((klnsklr) =>{
     suk = siklar[Math.floor(Math.random() * siklar.length)];
-    cvplr.innerHTML = suk;
+    klnsklr.innerHTML = suk;
     siklar = siklar - suk;
   });
 } else if(soru.includes("2.900km" && "6.300km")){
@@ -31,10 +31,10 @@ if(soru.includes("volkanik" && "dağ")){
   var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
   dogrucvp.innerHTML="Çekirdek";
   siklar = siklar - "Çekirdek";
-  cvplr = cvplr - dogrucvp;
-  cvplr.forEach((cvplr) =>{
+  const klnsklr = cvplr - dogrucvp;
+  klnsklr.forEach((klnsklr) =>{
     suk = siklar[Math.floor(Math.random() * siklar.length)];
-    cvplr.innerHTML = suk;
+    klnsklr.innerHTML = suk;
     siklar = siklar - suk;
   });
 }
