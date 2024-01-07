@@ -2,8 +2,10 @@ document.querySelector(".sorualani").style.display="none";
 document.body.addEventListener("keypress", function(event) {
   if(event.key === "Enter"){
     document.querySelector(".sorualani").style.display="flex";
+    start();
   }
 });
+function start(){
 const sorular = ["Aşağıdakilerden hangisi volkanik bir dağdır?", "Aşağıdakilerden hangisi Dünya'nın en ince katmanıdır?", "Manto'nun sona erdiği, 2.900km ile yerin merkezi olan 6.300km arasında yer alan katman hangisidir?"];
 var siklar = ["Yunt Dağı", "Kazma Dağı", "Boz Dağ", "Aydın Dağı", "Ağrı Dağı", "İç Çekirdek", "Dış Çekirdek", "Manto", "Yer Kabuğu", "Atmosfer", "Sima", "Sial", "Gökyüzü", "Çekirdek", "Stratosfer"];
 const soru = sorular[Math.floor(Math.random() * sorular.length)];
@@ -43,3 +45,4 @@ dogrucvpsikki.forEach((dogrucvpsikki) => {
   console.log(yzlnskkldr);
   console.log(yzlnsk);
 });
+}
