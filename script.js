@@ -16,3 +16,9 @@ if(soru.includes("volkanik" && "dağ")){
   dogrucvp.innerHTML="Çekirdek";
   siklar = [siklar - "Çekirdek"];
 }
+dogrucvpsikki = dogrucvpsikki.split(dogrucvp, dogrucvp);
+dogrucvpsikki.forEach((dogrucvpsikki) => {
+  suk = siklar[Math.floor(Math.random() * siklar.length)];
+  dogrucvpsikki.innerHTML = suk;
+  siklar = siklar.split(suk, suk);
+});
