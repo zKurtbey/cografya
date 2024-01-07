@@ -17,10 +17,10 @@ if(soru.includes("volkanik" && "dağ")){
   siklar = [siklar - "Çekirdek"];
 }
 var yzlncvp = dogrucvpsikki.indexOf(dogrucvp);
-var yzlncvpkldr = dogrucvpsikki.split(yzlncvp, 1);
+var yzlncvpkldr = dogrucvpsikki.splice(yzlncvp, 1);
 dogrucvpsikki.forEach((dogrucvpsikki) => {
   suk = siklar[Math.floor(Math.random() * siklar.length)];
   dogrucvpsikki.innerHTML = suk;
   var yzlnsk = siklar.indexOf(suk);
-  var yzlncvpkldr = siklar.split(yzlnsk, 1);
+  var yzlncvpkldr = siklar.splice(yzlnsk, 1);
 });
