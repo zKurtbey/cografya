@@ -140,6 +140,7 @@ body{
   font-family: system-ui, helvetica;
   color: rgb(240, 232, 255);
   font-weight: bold;
+  margin: 0 .5em 0 .5em;
 }
 .siklar{
   margin-top: .5em;
