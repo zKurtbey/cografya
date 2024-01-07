@@ -3,6 +3,7 @@ document.querySelector("#brdr").addEventListener("click", () => {
   document.querySelector("#brdr").style="display: none";
   document.querySelector(".sorualani").style="display: flex; animation: sorualani 1s ease-in-out forwards";
   start();
+  document.querySelector(".moon").style="animation: uydu 5s ease-in-out infinite";
   const skan = document.querySelectorAll(".suk");
   skan.forEach((skan) => {
     setTimeout(() => {
