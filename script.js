@@ -7,7 +7,7 @@ var cvplr = document.querySelectorAll(".cevap");
 var dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]]; 
 var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
 if(soru.includes("volkanik" && "dağ")){
-  dogrucvp.innerHTML="Ağrı Dağı";,
+  dogrucvp.innerHTML="Ağrı Dağı";
   var yzlnsk = siklar.indexOf(dogrucvp);
   siklar = siklar.splice(yzlnsk, 1);
 } else if(soru.includes("en" && "ince katmanıdır")){
