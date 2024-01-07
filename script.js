@@ -24,6 +24,7 @@ var yzlncvpkldr = dogrucvpsikki.splice(yzlncvp, 1);
 dogrucvpsikki.forEach((dogrucvpsikki) => {
   suk = siklar[Math.floor(Math.random() * siklar.length)];
   dogrucvpsikki.innerHTML = suk;
-  var yzlnsk = siklar.indexOf(suk);
+  yzlnsk = siklar.indexOf(suk);
   siklar = siklar.splice(yzlnsk, 1);
+  console.log(yzllnsk);
 });
