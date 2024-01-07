@@ -1,5 +1,6 @@
 document.querySelector(".sorualani").style.display="none";
 document.querySelector("#brdr").addEventListener("click", () => {
+  document.querySelector("#brdr").style="display: none";
   document.querySelector(".sorualani").style="display: flex; animation: sorualani 1s ease-in-out forwards";
   start();
   const skan = document.querySelectorAll(".suk");
