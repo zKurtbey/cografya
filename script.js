@@ -5,42 +5,39 @@ document.querySelector("#sorubaslik").innerHTML=soru;
 var suk;
 var cvplr = document.querySelectorAll(".cevap");
 if(soru.includes("volkanik" && "dağ")){
-  const dogrucvpsikki = document.querySelectorAll(".cevap");
-  const dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
-  dogrucvp.classList.add("cevaps");
-  dogrucvp.classList.remove("cevap");
+  var dogrucvpsikki = document.querySelectorAll(".cevap");
+  var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
   dogrucvp.innerHTML="Ağrı Dağı";
   siklar = siklar - "Ağrı Dağı";
+  dogrucvp.classList.add("cevaps");
+  dogrucvp.classList.remove("cevap");
   console.log(dogrucvpsikki);
   dogrucvpsikki.forEach((dogrucvpsikki) => {
     suk = siklar[Math.floor(Math.random() * siklar.length)];
     dogrucvpsikki.innerHTML = suk;
-    siklar = siklar - suk;
   });
 } else if(soru.includes("en" && "ince katmanıdır")){
-  const dogrucvpsikki = document.querySelectorAll(".cevap");
-  const dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
+  var dogrucvpsikki = document.querySelectorAll(".cevap");
+  var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
   dogrucvp.innerHTML="Yer Kabuğu";
-  dogrucvp.classList.add("cevaps");
-  dogrucvp.classList.remove("cevap");
   siklar = siklar - "Yer Kabuğu";
   console.log(dogrucvpsikki);
+  dogrucvp.classList.add("cevaps");
+  dogrucvp.classList.remove("cevap");
   dogrucvpsikki.forEach((dogrucvpsikki) => {
     suk = siklar[Math.floor(Math.random() * siklar.length)];
     dogrucvpsikki.innerHTML = suk;
-    siklar = siklar - suk;
   });
 } else if(soru.includes("2.900km" && "6.300km")){
-  const dogrucvpsikki = document.querySelectorAll(".cevap");
-  const dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
+  var dogrucvpsikki = document.querySelectorAll(".cevap");
+  var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
   dogrucvp.innerHTML="Çekirdek";
+  siklar = siklar - "Çekirdek";
   dogrucvp.classList.add("cevaps");
   dogrucvp.classList.remove("cevap");
-  siklar = siklar - "Çekirdek";
   console.log(dogrucvpsikki);
   dogrucvpsikki.forEach((dogrucvpsikki) => {
     suk = siklar[Math.floor(Math.random() * siklar.length)];
     dogrucvpsikki.innerHTML = suk;
-    siklar = siklar - suk;
   });
 }
