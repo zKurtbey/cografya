@@ -99,7 +99,7 @@ body{
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: 11em;
+  right: 8.5em;
   width: 75px;
   height: 75px;
   border-radius: 20px;
@@ -160,17 +160,17 @@ body{
 /*moon*/
 .moon{
   position: absolute;
-  width: 10em;
-  height: 10em;
+  width: 7.5em;
+  height: 7.5em;
   border-radius: 50%;
   background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22);
-  bottom: 32.5em;
-  right: 32em;
+  bottom: 24em;
+  right: 24em;
   z-index: 1;
   box-shadow: 0 0 15px #444648;
 }
 @keyframes uydu{
-  0%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 32.5em; right: 32em; z-index: 1;}
+  0%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 24; right: 24em; z-index: 1;}
   10%{background-image: linear-gradient(100deg, #d6d2d2, #d2d2d8, #3b3c3d);}
   14%{background-image: linear-gradient(100deg, #bdbaba, #bbbbc1, #4e4f50);}
   18%{background-image: linear-gradient(100deg, #a19d9d, #a0a0a5, #636567);}
@@ -186,13 +186,13 @@ body{
   82%{background-image: linear-gradient(100deg, #a19d9d, #a0a0a5, #636567);}
   86%{background-image: linear-gradient(100deg, #bdbaba, #bbbbc1, #4e4f50);}
   90%{background-image: linear-gradient(100deg, #d6d2d2, #d2d2d8, #3b3c3d);}
-  100%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 32.5em; right: 32em; z-index: 0;}
+  100%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 24em; right: 24em; z-index: 0;}
 }
 /*world*/
 .world{
   position: absolute;
-  width: 35em;
-  height: 35em;
+  width: 25em;
+  height: 25em;
   right: 2em;
   bottom: 5em;
   background-image: linear-gradient(75deg, #1466ad, #21272d);
@@ -203,22 +203,22 @@ body{
 }
 .greens{
   position: absolute;
-  width: 20em;
-  height: 20em;
+  width: 10em;
+  height: 10em;
   background-image: linear-gradient(100deg, #01ff40, #1d5134);
   transform: rotate(-45deg);
-  right: 17.5em;
-  bottom: 15em;
+  right: 7.5em;
+  bottom: 5em;
   border-bottom-left-radius: 90%;
   border-bottom-right-radius: 30%;
 }
 .cloud{
   position: absolute;
-  width: 30em;
-  height: 17.5em;
+  width: 20em;
+  height: 12.5em;
   background-image: linear-gradient(45deg, #f8f7f7f5, #6f7c88bf);
-  right: 10em;
-  bottom: 5em;
+  right: 7.5em;
+  bottom: 2.5em;
   border-top-right-radius: 20%;
   border-bottom-right-radius: 50%;
   transform: rotate(25deg);
@@ -227,7 +227,7 @@ body{
 #bottom-green{
   border-top-left-radius: 20%;
   border-top-right-radius: 50%;
-  bottom: -2.5em;
+  bottom: -1.25em;
   right: 0;
 }
 /*soru alanı*/
@@ -301,8 +301,8 @@ body{
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 42em;
-  height: 67.5em;
+  width: 35em;
+  height: 45em;
   background-color: rgb(0 0 48 / 25%);
   backdrop-filter: blur(50px);
   border-radius: 1.25em;
@@ -321,9 +321,9 @@ body{
   text-align: center;
   display: flex;
   position: relative;
-  height: 22.5em;
-  width: 37.5em;
-  border-radius: 3em;
+  height: 17.5em;
+  width: 25.5em;
+  border-radius: 1,53em;
   backdrop-filter: blur(15px);
   box-shadow: rgba(0, 0, 0, .7) 0 0 25px;
   transition: all .25s ease-in-out;
@@ -334,9 +334,9 @@ body{
   text-align: center;
   display: flex;
   position: relative;
-  height: 22.5em;
-  width: 37.5em;
-  border-radius: 2em;
+  height: 17em;
+  width: 25.5em;
+  border-radius: 1,5em;
   backdrop-filter: blur(15px);
   box-shadow: rgb(240 56 56 / 70%) 0 0 25px;
 }
@@ -348,16 +348,16 @@ body{
   margin: 0 .5em 0 .5em;
 }
 .siklar{
-  margin-top: .75em;
+  margin-top: .5em;
   display: grid;
-  grid-template-rows: 7.5em 7.5em 7.5em 7.5em 7.5em;
+  grid-template-rows: 5em 5em 5em 5em 5em;
   align-items: center;
   justify-content: center;
 }
 .suk{
-  height: 6em;
-  width: 37.5em;
-  border-radius: 1.5em;
+  height: 3em;
+  width: 25em;
+  border-radius: 1em;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -370,9 +370,9 @@ body{
   opacity: 0;
 }
 .suk:hover{
-  height: 6em;
-  width: 37.5em;
-  border-radius: 1.5em;
+  height: 3em;
+  width: 25em;
+  border-radius: 1em;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -388,7 +388,7 @@ body{
 .cevap{
   font-family: system-ui, helvetica;
   font-weight: bold;
-  font-size: 22.75px;
+  font-size: 10.5px;
   color: transparent;
   transition: all .35s ease;
   color: rgb(240 232 255 / 80%);
@@ -396,12 +396,6 @@ body{
 .cevap:hover{
   text-shadow: rgb(240 232 255 /50%) 0 0 20px;
   color: rgb(240 232 255 / 100%);
-}
-.cevaps{
-  font-family: system-ui, helvetica;
-  font-weight: bold;
-  color: rgb(240, 232, 255);
-  font-size: 22.75px;
 }
 }
 
@@ -800,11 +794,5 @@ body{
 .cevap:hover{
   text-shadow: rgb(240 232 255 /50%) 0 0 20px;
   color: rgb(240 232 255 / 100%);
-}
-.cevaps{
-  font-family: system-ui, helvetica;
-  font-weight: bold;
-  color: rgb(240, 232, 255);
-  font-size: 17.5px;
 }
 }
