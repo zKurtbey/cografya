@@ -22,4 +22,3 @@ if(soru.includes("volkanik" && "dağ")){
     suk = siklar[Math.floor(Math.random() * siklar.length)];
     dogrucvpsikki.innerHTML = suk;
   });
-}
