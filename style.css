@@ -111,6 +111,9 @@ body{
   align-self: center;
 }
 #brdr{
+  position: absolute;
+  right: 5em;
+  bottom: 5em;
   display: flex;
   align-items: center;
   justify-content: center;
