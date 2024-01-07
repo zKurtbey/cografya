@@ -166,3 +166,9 @@ body{
   color: rgb(240, 232, 255);
   font-size: 17.5px;
 }
+.cevaps{
+  font-family: system-ui, helvetica;
+  font-weight: bold;
+  color: rgb(240, 232, 255);
+  font-size: 17.5px;
+}
