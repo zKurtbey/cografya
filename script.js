@@ -12,18 +12,21 @@ var yzlncvp = [];
 var yzlncvpkldr;
 if(soru.includes("volkanik" && "dağ")){
   dogrucvp.innerHTML="Ağrı Dağı";
+  yzlncvp.push(dogrucvp);
   yzlnsk = siklar.indexOf(dogrucvp);
   yzlnskkldr = siklar.splice(yzlnsk, 1);
   yzlncvp = dogrucvpsikki.indexOf(dogrucvp);
   yzlncvpkldr = dogrucvpsikki.splice(yzlncvp, 1);
 } else if(soru.includes("en" && "ince katmanıdır")){
   dogrucvp.innerHTML="Yer Kabuğu";
+  yzlncvp.push(dogrucvp);
   yzlnsk = siklar.indexOf(dogrucvp);
   yzlnskkldr = siklar.splice(yzlnsk, 1);
   yzlncvp = dogrucvpsikki.indexOf(dogrucvp);
   yzlncvpkldr = dogrucvpsikki.splice(yzlncvp, 1);
 } else if(soru.includes("2.900km" && "6.300km")){
   dogrucvp.innerHTML="Çekirdek";
+  yzlncvp.push(dogrucvp);
   yzlnsk = siklar.indexOf(dogrucvp);
   yzlnskkldr = siklar.splice(yzlnsk, 1);
   yzlncvp = dogrucvpsikki.indexOf(dogrucvp);
@@ -32,6 +35,7 @@ if(soru.includes("volkanik" && "dağ")){
 dogrucvpsikki.forEach((dogrucvpsikki) => {
   suk = siklar[Math.floor(Math.random() * siklar.length)];
   dogrucvpsikki.innerHTML = suk;
+  yzlnsk.push(suk);
   yzlnsk = siklar.indexOf(suk);
   yzlnskkldr = siklar.splice(yzlnsk, 1);
   console.log(yzlnskkldr);
