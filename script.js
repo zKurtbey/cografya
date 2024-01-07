@@ -26,5 +26,5 @@ dogrucvpsikki.forEach((dogrucvpsikki) => {
   dogrucvpsikki.innerHTML = suk;
   yzlnsk = siklar.indexOf(suk);
   siklar = siklar.splice(yzlnsk, 1);
-  console.log(yzllnsk);
+  console.log(yzlnsk);
 });
