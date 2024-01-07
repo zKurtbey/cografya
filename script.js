@@ -3,7 +3,7 @@ document.body.addEventListener("keypress", function(event) {
   if(event.key === "Enter"){
     document.querySelector(".sorualani").style="display: flex; animation: sorualani 1s ease-in-out forwards";
     start();
-    const skan = document.querySelectorAll(".cevap");
+    const skan = document.querySelectorAll(".suk");
     skan.forEach((skan) => {
       setTimeout(() => {
         skan.style="opacity: 1";
