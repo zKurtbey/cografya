@@ -176,13 +176,14 @@ body{
   30%{background-image: linear-gradient(100deg, #9a9a9d, #bcb8b8, #b5b5ba);}
   40%{background-image: linear-gradient(100deg, #727276, #aaa6a6, #e7e8e8);}
   50%{background-image: linear-gradient(100deg, #525255, #c1bcbc, #ffffff); bottom: 0em; right: -15em; display: none;}
-  10%{background-image: linear-gradient(100deg, #d6d2d2, #d2d2d8, #3b3c3d);}
-  14%{background-image: linear-gradient(100deg, #bdbaba, #bbbbc1, #4e4f50);}
-  18%{background-image: linear-gradient(100deg, #a19d9d, #a0a0a5, #636567);}
-  22%{background-image: linear-gradient(100deg, #888585, #8d8d90, #7a7d80);}
-  26%{background-image: linear-gradient(100deg, #747479, #777474, #8c8e90);}
-  30%{background-image: linear-gradient(100deg, #9a9a9d, #bcb8b8, #b5b5ba);}
-  100%{background-image: linear-gradient(100deg, #fffff, #fffff, #1b1f22); bottom: 30em; right: 27.5em; z-index: 0;}
+  60%{background-image: linear-gradient(100deg, #727276, #aaa6a6, #e7e8e8);}
+  70%{background-image: linear-gradient(100deg, #9a9a9d, #bcb8b8, #b5b5ba);}
+  74%{background-image: linear-gradient(100deg, #747479, #777474, #4e4f50);}
+  78%{background-image: linear-gradient(100deg, #888585, #8d8d90, #7a7d80);}
+  82%{background-image: linear-gradient(100deg, #a19d9d, #a0a0a5, #636567);}
+  86%{background-image: linear-gradient(100deg, #bdbaba, #bbbbc1, #4e4f50);}
+  90%{background-image: linear-gradient(100deg, #d6d2d2, #d2d2d8, #3b3c3d);}
+  100%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 30em; right: 27.5em; z-index: 0;}
 }
 /*world*/
 .world{
