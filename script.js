@@ -7,7 +7,7 @@ var cvplr = document.querySelectorAll(".cevap");
 if(soru.includes("volkanik" && "dağ")){
   var dogrucvpsikki = document.querySelectorAll(".cevap");
   var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
-  dogrucvpsikki = dogrucvpsikki.length - dogrucvp;
+  dogrucvpsikki = [dogrucvpsikki.length - dogrucvp];
   dogrucvp.innerHTML="Ağrı Dağı";
   siklar = siklar - "Ağrı Dağı";
   console.log(dogrucvpsikki);
@@ -20,7 +20,7 @@ if(soru.includes("volkanik" && "dağ")){
   var dogrucvpsikki = document.querySelectorAll(".cevap");
   var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
   dogrucvp.innerHTML="Yer Kabuğu";
-  dogrucvpsikki = dogrucvpsikki.length - dogrucvp;
+  dogrucvpsikki = [dogrucvpsikki.length - dogrucvp];
   siklar = siklar - "Yer Kabuğu";
   console.log(dogrucvpsikki);
   for(i=0; i<5; i++){
@@ -32,7 +32,7 @@ if(soru.includes("volkanik" && "dağ")){
   var dogrucvpsikki = document.querySelectorAll(".cevap");
   var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
   dogrucvp.innerHTML="Çekirdek";
-  dogrucvpsikki = dogrucvpsikki.length - dogrucvp;
+  dogrucvpsikki = [dogrucvpsikki.length - dogrucvp];
   siklar = siklar - "Çekirdek";
   console.log(dogrucvpsikki);
   for(i=0; i<5; i++){
