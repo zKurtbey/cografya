@@ -7,34 +7,34 @@ var cvplr = document.querySelectorAll(".cevap");
 if(soru.includes("volkanik" && "dağ")){
   var dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]];
   var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
+  dogrucvpsikki = dogrucvpsikki - dogrucvp;
   dogrucvp.innerHTML="Ağrı Dağı";
   siklar = siklar - "Ağrı Dağı";
-  const klnsklr = dogrucvpsikki.length - dogrucvp;
-  klnsklr.forEach((klnsklr) =>{
+  dogrucvpsikki.forEach((dogrucvpsikki) =>{
     suk = siklar[Math.floor(Math.random() * siklar.length)];
-    klnsklr.innerHTML = suk;
+    dogrucvpsikki.innerHTML = suk;
     siklar = siklar - suk;
   });
 } else if(soru.includes("en" && "ince katmanıdır")){
   var dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]];
   var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
   dogrucvp.innerHTML="Yer Kabuğu";
+  dogrucvpsikki = dogrucvpsikki - dogrucvp;
   siklar = siklar - "Yer Kabuğu";
-  const klnsklr = dogrucvpsikki.length - dogrucvp;
-  klnsklr.forEach((klnsklr) =>{
+  dogrucvpsikki.forEach((dogrucvpsikki) =>{
     suk = siklar[Math.floor(Math.random() * siklar.length)];
-    klnsklr.innerHTML = suk;
+    dogrucvpsikki.innerHTML = suk;
     siklar = siklar - suk;
   });
 } else if(soru.includes("2.900km" && "6.300km")){
   var dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]];
   var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
   dogrucvp.innerHTML="Çekirdek";
+  dogrucvpsikki = dogrucvpsikki - dogrucvp;
   siklar = siklar - "Çekirdek";
-  const klnsklr = dogrucvpsikki.length - dogrucvp;
-  klnsklr.forEach((klnsklr) =>{
+  dogrucvpsikki.forEach((dogrucvpsikki) =>{
     suk = siklar[Math.floor(Math.random() * siklar.length)];
-    klnsklr.innerHTML = suk;
+    dogrucvpsikki.innerHTML = suk;
     siklar = siklar - suk;
   });
 }
