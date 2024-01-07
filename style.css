@@ -1,12 +1,14 @@
 html{
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 body{
   display: flex;
   margin: 0;
   align-items: center;
   justify-content: center;
+  text-align: center;
   overflow: hidden;
   background-image: linear-gradient(45deg, #171818, rgb(51 5 134));
 }
@@ -138,6 +140,7 @@ body{
   left: -30em;
   bottom: -30em;
   z-index: 3;
+  overflow: hidden;
 }
 /*mercure*/
 .mercure{
@@ -173,7 +176,7 @@ body{
   26%{background-image: linear-gradient(100deg, #747479, #777474, #8c8e90);}
   30%{background-image: linear-gradient(100deg, #9a9a9d, #bcb8b8, #b5b5ba);}
   40%{background-image: linear-gradient(100deg, #727276, #aaa6a6, #e7e8e8);}
-  50%{background-image: linear-gradient(100deg, #525255, #c1bcbc, #ffffff); bottom: 0em; right: -45em; z-index: 0;}
+  50%{background-image: linear-gradient(100deg, #525255, #c1bcbc, #ffffff); bottom: 0em; right: -15em; display: none;}
   10%{background-image: linear-gradient(100deg, #d6d2d2, #d2d2d8, #3b3c3d);}
   14%{background-image: linear-gradient(100deg, #bdbaba, #bbbbc1, #4e4f50);}
   18%{background-image: linear-gradient(100deg, #a19d9d, #a0a0a5, #636567);}
@@ -230,8 +233,6 @@ body{
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 77.5em;
-  width: 100%;
   align-self: center;
 }
 #brdr{
