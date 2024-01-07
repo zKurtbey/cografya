@@ -9,7 +9,7 @@ if(soru.includes("volkanik" && "dağ")){
   var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
   dogrucvp.innerHTML="Ağrı Dağı";
   siklar = siklar - "Ağrı Dağı";
-  const klnsklr = cvplr - dogrucvp;
+  const klnsklr = dogrucvpsikki.length - dogrucvp;
   klnsklr.forEach((klnsklr) =>{
     suk = siklar[Math.floor(Math.random() * siklar.length)];
     klnsklr.innerHTML = suk;
@@ -20,7 +20,7 @@ if(soru.includes("volkanik" && "dağ")){
   var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
   dogrucvp.innerHTML="Yer Kabuğu";
   siklar = siklar - "Yer Kabuğu";
-  const klnsklr = cvplr - dogrucvp;
+  const klnsklr = dogrucvpsikki.length - dogrucvp;
   klnsklr.forEach((klnsklr) =>{
     suk = siklar[Math.floor(Math.random() * siklar.length)];
     klnsklr.innerHTML = suk;
@@ -31,7 +31,7 @@ if(soru.includes("volkanik" && "dağ")){
   var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
   dogrucvp.innerHTML="Çekirdek";
   siklar = siklar - "Çekirdek";
-  const klnsklr = cvplr - dogrucvp;
+  const klnsklr = dogrucvpsikki.length - dogrucvp;
   klnsklr.forEach((klnsklr) =>{
     suk = siklar[Math.floor(Math.random() * siklar.length)];
     klnsklr.innerHTML = suk;
