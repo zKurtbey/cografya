@@ -7,37 +7,40 @@ var cvplr = document.querySelectorAll(".cevap");
 if(soru.includes("volkanik" && "dağ")){
   const dogrucvpsikki = document.querySelectorAll(".cevap");
   const dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
-  dogrucvpsikki = [dogrucvpsikki.length - dogrucvp.value];
+  dogrucvp.classList.add("cevaps");
+  dogrucvp.classList.remove("cevap");
   dogrucvp.innerHTML="Ağrı Dağı";
   siklar = siklar - "Ağrı Dağı";
   console.log(dogrucvpsikki);
-  for(i=0; i<5; i++){
+  dogrucvpsikki.forEach((dogrucvpsikki){
     suk = siklar[Math.floor(Math.random() * siklar.length)];
     dogrucvpsikki.innerHTML = suk;
     siklar = siklar - suk;
-  }
+  });
 } else if(soru.includes("en" && "ince katmanıdır")){
   const dogrucvpsikki = document.querySelectorAll(".cevap");
   const dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
   dogrucvp.innerHTML="Yer Kabuğu";
-  dogrucvpsikki = [dogrucvpsikki.length - dogrucvp.value];
+  dogrucvp.classList.add("cevaps");
+  dogrucvp.classList.remove("cevap");
   siklar = siklar - "Yer Kabuğu";
   console.log(dogrucvpsikki);
-  for(i=0; i<5; i++){
+  dogrucvpsikki.forEach((cevap) => {
     suk = siklar[Math.floor(Math.random() * siklar.length)];
     dogrucvpsikki.innerHTML = suk;
     siklar = siklar - suk;
-  }
+  });
 } else if(soru.includes("2.900km" && "6.300km")){
   const dogrucvpsikki = document.querySelectorAll(".cevap");
   const dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
   dogrucvp.innerHTML="Çekirdek";
-  dogrucvpsikki = [dogrucvpsikki.length - dogrucvp.value];
+  dogrucvp.classList.add("cevaps");
+  dogrucvp.classList.remove("cevap");
   siklar = siklar - "Çekirdek";
   console.log(dogrucvpsikki);
-  for(i=0; i<5; i++){
+  dogrucvpsikki.forEach((dogrucvpsikki) => {
     suk = siklar[Math.floor(Math.random() * siklar.length)];
     dogrucvpsikki.innerHTML = suk;
     siklar = siklar - suk;
-  }
+  });
 }
