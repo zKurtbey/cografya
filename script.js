@@ -6,28 +6,25 @@ var suk;
 var cvplr = document.querySelectorAll(".cevap");
 var dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]]; 
 var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
-var yzlnsk = [];
+var yzlnsk;
 var yzlnskkldr;
-var yzlncvp = [];
+var yzlncvp;
 var yzlncvpkldr;
 if(soru.includes("volkanik" && "dağ")){
   dogrucvp.innerHTML="Ağrı Dağı";
-  yzlncvp.push(dogrucvp);
-  yzlnsk = siklar.indexOf(dogrucvp);
+  yzlnsk = siklar.indexOf(dogrucvp.value);
   yzlnskkldr = siklar.splice(yzlnsk, 1);
   yzlncvp = dogrucvpsikki.indexOf(dogrucvp);
   yzlncvpkldr = dogrucvpsikki.splice(yzlncvp, 1);
 } else if(soru.includes("en" && "ince katmanıdır")){
   dogrucvp.innerHTML="Yer Kabuğu";
-  yzlncvp.push(dogrucvp);
-  yzlnsk = siklar.indexOf(dogrucvp);
+  yzlnsk = siklar.indexOf(dogrucvp.value);
   yzlnskkldr = siklar.splice(yzlnsk, 1);
   yzlncvp = dogrucvpsikki.indexOf(dogrucvp);
   yzlncvpkldr = dogrucvpsikki.splice(yzlncvp, 1);
 } else if(soru.includes("2.900km" && "6.300km")){
   dogrucvp.innerHTML="Çekirdek";
-  yzlncvp.push(dogrucvp);
-  yzlnsk = siklar.indexOf(dogrucvp);
+  yzlnsk = siklar.indexOf(dogrucvp.value);
   yzlnskkldr = siklar.splice(yzlnsk, 1);
   yzlncvp = dogrucvpsikki.indexOf(dogrucvp);
   yzlncvpkldr = dogrucvpsikki.splice(yzlncvp, 1);
@@ -35,7 +32,6 @@ if(soru.includes("volkanik" && "dağ")){
 dogrucvpsikki.forEach((dogrucvpsikki) => {
   suk = siklar[Math.floor(Math.random() * siklar.length)];
   dogrucvpsikki.innerHTML = suk;
-  yzlnsk.push(suk);
   yzlnsk = siklar.indexOf(suk);
   yzlnskkldr = siklar.splice(yzlnsk, 1);
   console.log(yzlnskkldr);
