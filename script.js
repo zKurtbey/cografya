@@ -11,7 +11,7 @@ if(soru.includes("volkanik" && "dağ")){
   var yzlnsk = siklar.indexOf(dogrucvp);
   siklar = siklar.splice(yzlnsk, 1);
 } else if(soru.includes("en" && "ince katmanıdır")){
-  dogrucvp.innerHTML="Yer Kabuğu";,
+  dogrucvp.innerHTML="Yer Kabuğu";
   var yzlnsk = siklar.indexOf(dogrucvp);
   siklar = siklar.splice(yzlnsk, 1);
 } else if(soru.includes("2.900km" && "6.300km")){
