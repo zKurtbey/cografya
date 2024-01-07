@@ -3,8 +3,8 @@ var siklar = ["Yunt Dağı", "Kazma Dağı", "Boz Dağ", "Aydın Dağı", "Ağr�
 const soru = sorular[Math.floor(Math.random() * sorular.length)];
 document.querySelector("#sorubaslik").innerHTML=soru;
 const cevap = document.querySelectorAll(".cevap");
+var suk;
 cevap.forEach((cevap) =>{
-  const suk = siklar[Math.floor(Math.random() * siklar.length)];
+  suk = siklar[Math.floor(Math.random() * siklar.length)];
   cevap.innerHTML = suk;
-  siklar = siklar - suk;
 });
