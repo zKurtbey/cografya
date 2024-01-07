@@ -26,4 +26,5 @@ if(soru.includes("volkanik" && "dağ")){
 cvpsikki.forEach((cvpsikki) =>{
   suk = siklar[Math.floor(Math.random() * siklar.length)];
   cevap.innerHTML = suk;
+  siklar = siklar - suk;
 });
