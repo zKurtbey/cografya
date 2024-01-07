@@ -24,12 +24,24 @@ body{
   box-shadow: rgb(56 38 88) 0px 0px 15px;
 }
 .accesit{
+  height: 45px;
   width: 45px;
   position: relative;
   left: 1em;
+  border-radius: 10px;
+  transition: all .20s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.accesit:hover{
+  background-color: #34425c9c;
 }
 #down-arrow{
-  height: 45px;
+  height: 47.5px;
+  margin-top: 5px;
 }
 .cesit{
   flex-direction: column;
@@ -80,12 +92,17 @@ body{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  position: absolute;
-  top: 0;
-  right: 5em;
-  width: 7.5em;
-  height: 8em;
+  justify-content: center;
+  position: relative;
+  right: -32.5em;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  transition: all .20s ease-in-out;
+  cursor: pointer;
+}
+.digeryarismalar:hover{
+  background-color: #34425c9c;
 }
 #code{
   height: 40px;
@@ -95,9 +112,20 @@ body{
   height: 35px;
 }
 .ustukapat{
-  width: 35px;
-  position: absolute;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  position: relative;
   right: 2em;
+  border-radius: 10px;
+  transition: all .20s ease-in-out;
+  cursor: pointer;
+}
+.ustukapat:hover{
+  background-color: #34425c9c;
 }
 
 /*soru alanı*/
