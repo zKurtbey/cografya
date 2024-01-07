@@ -1,15 +1,13 @@
 document.querySelector(".sorualani").style.display="none";
-document.body.addEventListener("keypress", function(event) {
-  if(event.key === "Enter"){
-    document.querySelector(".sorualani").style="display: flex; animation: sorualani 1s ease-in-out forwards";
-    start();
-    const skan = document.querySelectorAll(".suk");
-    skan.forEach((skan) => {
-      setTimeout(() => {
-        skan.style="opacity: 1";
-      }, 350);
-    });
-  }
+document.querySelector("#brdr").addEventListener("click", () => {
+  document.querySelector(".sorualani").style="display: flex; animation: sorualani 1s ease-in-out forwards";
+  start();
+  const skan = document.querySelectorAll(".suk");
+  skan.forEach((skan) => {
+    setTimeout(() => {
+      skan.style="opacity: 1";
+    }, 350);
+  });
 });
 function start(){
 const sorular = ["Aşağıdakilerden hangisi volkanik bir dağdır?", "Aşağıdakilerden hangisi Dünya'nın en ince katmanıdır?", "Manto'nun sona erdiği, 2.900km ile yerin merkezi olan 6.300km arasında yer alan katman hangisidir?"];
