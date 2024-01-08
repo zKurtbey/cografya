@@ -532,8 +532,8 @@ body{
 }
 /*mercure*/
 .mercure{
-  height: 10em;
-  width: 10em;
+  height: 7.5em;
+  width: 7.5em;
   z-index: 0;
   right: 40em;
   bottom: 20em;
@@ -588,15 +588,26 @@ body{
 }
 .greens{
   position: absolute;
-  width: 20em;
-  height: 20em;
+  width: 25em;
+  height: 25em;
   background-image: linear-gradient(100deg, #01ff40, #1d5134);
   transform: rotate(-45deg);
-  right: 17.5em;
-  bottom: 15em;
+  right: 22.5em;
+  bottom: 20em;
   border-bottom-left-radius: 90%;
   border-bottom-right-radius: 30%;
+  border-top-left-radius: 90%;
+  border-top-right-radius: 30%;
+  box-shadow: 0 0 10px #0b0b0b5c;
 }
+  @keyframes greens{
+    0%{right: 27.5em; bottom: 25em;}
+    40%{right: -10em; bottom: -25em; width: 17.5em; height: 20em; opacity: .5; box-shadow: 0 0 20px #000000;}
+    65%{right: 67.5em; bottom: 50em; box-shadow: 0 0 20px #000000f0;}
+    70%{z-index: -1;}
+    95%{z-index: 0;}
+    100%{right: 27.5em; bottom: 25em;}
+  }
 .cloud{
   position: absolute;
   width: 30em;
@@ -606,15 +617,33 @@ body{
   bottom: 5em;
   border-top-right-radius: 20%;
   border-bottom-right-radius: 50%;
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 50%;
   transform: rotate(25deg);
   box-shadow: 0 0 20px #20232673;
 }
+  @keyframes cloud{
+    0%{right: 10em; bottom: 5em; border-top-right-radius: 40%; transform: rotate(-20deg);}
+    40%{right: -25em; bottom: 25em; border-bottom-left-radius: 50%; border-top-right-radius: 10%; border-bottom-left-radius: 70%; width: 0em; height: 10em; opacity: .5; box-shadow: 0 0 20px #000000;}
+    65%{right: 70em; bottom: 0em; box-shadow: 0 0 20px #000000f0;}
+    70%{z-index: -1;}
+    95%{z-index: 0;}
+    100%{right: 10em; bottom: 5em; border-top-right-radius: 40%; transform: rotate(-20deg);}
+  }
 #bottom-green{
   border-top-left-radius: 20%;
   border-top-right-radius: 50%;
   bottom: -2.5em;
   right: 0;
 }
+  @keyframes bottom-green{
+    0%{right: 0em; bottom: -2.5em;}
+    40%{right: -25em; bottom: -65em; width: 17.5em; height: 20em; opacity: .5; box-shadow: 0 0 20px #000000;}
+    65%{right: 45em; bottom: 55em; box-shadow: 0 0 20px #000000f0;}
+    70%{z-index: -1;}
+    95%{z-index: 0;}
+    100%{right: 0em; bottom: -2.5em; transform: rotate(-45deg);}
+  }
 /*soru alanı*/
 .buyuksorualani{
   display: flex;
