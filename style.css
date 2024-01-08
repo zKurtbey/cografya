@@ -553,6 +553,7 @@ body{
   right: 30em;
   z-index: 1;
   box-shadow: 0 0 15px #444648;
+  animation-delay: .25s;
 }
 @keyframes uydu{
   0%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 32.5em; right: 30em; z-index: 1;}
