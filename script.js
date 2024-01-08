@@ -12,7 +12,11 @@ document.querySelector("#brdr").addEventListener("click", () => {
   });
 });
 function start(){
-var sorular = ["Aşağıdakilerden hangisi volkanik bir dağdır?", "Aşağıdakilerden hangisi Dünya'nın en ince katmanıdır?", "Manto'nun sona erdiği, 2.900km ile yerin merkezi olan 6.300km arasında yer alan katman hangisidir?", "Türkiye'nin başkenti nedir?",
+var sorular = [
+  "Aşağıdakilerden hangisi volkanik bir dağdır?",
+  "Aşağıdakilerden hangisi Dünya'nın en ince katmanıdır?",
+  "Manto'nun sona erdiği, 2.900km ile yerin merkezi olan 6.300km arasında yer alan katman hangisidir?",
+  "Türkiye'nin başkenti nedir?",
   "Dünyanın en büyük okyanusu hangisidir?",
   "Kuzey Amerika'nın en yüksek dağı nedir?",
   "Güney Amerika'nın en uzun nehri nedir?",
@@ -143,7 +147,12 @@ var sorular = ["Aşağıdakilerden hangisi volkanik bir dağdır?", "Aşağıdak
   "Avustralya'daki en yüksek zirve nedir?"
 ];
 
-var siklar = ["Ağrı Dağı", "Yer Kabuğu", "Çekirdek", "Stratosfer", "Ankara",
+var siklar = [
+  "Ağrı Dağı",
+  "Yer Kabuğu",
+  "Çekirdek",
+  "Stratosfer",
+  "Ankara",
   "Pasifik Okyanusu",
   "Denali",
   "Amazon Nehri",
@@ -345,7 +354,7 @@ var yzlncvpkldr;
 var dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]]; 
 var soru = sorular[Math.floor(Math.random() * sorular.length)];
 document.querySelector("#sorubaslik").innerHTML=soru;
-var sorukonumu = soru.indexOf(soru);
+var sorukonumu = sorular.indexOf(soru);
 var dogrucvp = dogrucvp.indexOf(sorukonumu);
 dogrucvp.innerHTML=dogrucvp;
 var sorusiklari = siklar.indexOf(sorukonumu);
