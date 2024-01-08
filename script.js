@@ -355,9 +355,8 @@ var dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelec
 var soru = sorular[Math.floor(Math.random() * sorular.length)];
 document.querySelector("#sorubaslik").innerHTML=soru;
 var sorukonumu = sorular.indexOf(soru);
-var dogrucvp = dogrucvp.indexOf(sorukonumu);
+var dogrucvp = siklar.indexOf(sorukonumu);
 dogrucvp.innerHTML=dogrucvp;
-var sorusiklari = siklar.indexOf(sorukonumu);
 var suk;
 dogrucvpsikki.forEach((dogrucvpsikki) => {
   suk = sahtesiklar.indexOf(sorukonumu);
