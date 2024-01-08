@@ -139,7 +139,7 @@ console.log(sorukonumu);
 var dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]]; 
 var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
 var grckcvpdgr;
-grckcvpdgr =siklar.splice(sorukonumu, 1);
+grckcvpdgr = siklar.splice(sorukonumu, 1);
 dogrucvp.innerHTML=grckcvpdgr;
 yzlnsk = dogrucvpsikki.indexOf(dogrucvp);
 yzlnskkldr = dogrucvpsikki.splice(yzlnsk, 1);
@@ -157,7 +157,7 @@ dogrucvpsikki.forEach((dogrucvpsikki) => {
   dogrucvpsikki.innerHTML = sukdgr;
   yzlnsk = sahtesiklar.indexOf(sorukonumu);
   yzlnskkldr = sahtesiklar.splice(yzlnsk, 1);
-  sorukonumu = sorukonumu+1;
+  sorukonumu = sorukonumu+.25;
   console.log(sorukonumu);
   console.log(dogrucvpsikki);
 });
