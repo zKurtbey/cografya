@@ -147,7 +147,8 @@ var sahtesiklar = [
   "Suudi Arabistan", "Katar", "Birleşik Arap Emirlikleri", "Umman",
   "Dufourspitze", "Nordend", "Lyskamm", "Dom",
   "Shannon Nehri", "Boyne Nehri", "Blackwater Nehri", "Liffey Nehri",
-  "Rinjani Dağı", "Merapi Dağı", "Semeru Dağı", "Bromo Dağı"
+  "Rinjani Dağı", "Merapi Dağı", "Semeru Dağı", "Bromo Dağı",
+  "Karakoram", "Himalaya", "Andlar", "Alpler"
 ];
 var yzlnsk;
 var yzlnskkldr;
