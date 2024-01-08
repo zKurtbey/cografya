@@ -348,7 +348,7 @@ document.querySelector("#sorubaslik").innerHTML=soru;
 var sorukonumu = soru.indexOf(soru);
 var dogrucvp = dogrucvp.indexOf(sorukonumu);
 dogrucvp.innerHTML=dogrucvp;
-var sorusiklari = sorusiklari.indexOf(sorukonumu);
+var sorusiklari = siklar.indexOf(sorukonumu);
 var suk;
 dogrucvpsikki.forEach((dogrucvpsikki) => {
   suk = sahtesiklar.indexOf(sorukonumu);
