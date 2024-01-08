@@ -3,7 +3,7 @@ document.querySelector("#brdr").addEventListener("click", () => {
   document.querySelector("#brdr").style="display: none";
   document.querySelector(".sorualani").style="display: flex; animation: sorualani 1s ease-in-out forwards";
   start();
-  document.querySelector(".moon").style="animation: uydu 5s ease-in-out infinite";
+  document.querySelector(".moon").style="animation: uydu 17.5s ease-in-out infinite";
   document.querySelector('.greens').style="animation: greens 12.5s ease-in-out infinite";
   document.querySelector('#bottom-green').style="animation: bottom-green 12.5s ease-in-out infinite";
   document.querySelector('.cloud').style="animation: cloud 7.5s ease-in-out infinite";
