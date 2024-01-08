@@ -109,7 +109,6 @@ var sahtesiklar = [
   "Atlas", "Hint", "Büyük Okyanus", "Arktik",
   "Ağrı Dağı", "Toros Dağları", "Kaçkar Dağları", "Cilo Dağları",
   "Nijer Nehri", "Congo Nehri", "Nijerya Nehri", "Zambezi Nehri",
-  "Mısır", "Nijerya", "Ethiopia", "Gana",
   "Gölcük", "Beyşehir Gölü", "Eber Gölü", "Nazik Gölü",
   "Vietnam", "Tayland", "Hindistan", "Pakistan",
   "Melbourne", "Sydney", "Brisbane", "Perth",
