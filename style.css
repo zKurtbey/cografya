@@ -414,7 +414,7 @@ body{
   top: 0;
   left: 0;
   box-shadow: rgb(56 38 88) 0px 0px 15px;
-  transition: height .5s ease-out;
+  transition: all .5s ease-out;
 }
 .accesit{
   height: 45px;
