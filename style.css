@@ -568,7 +568,7 @@ body{
   height: 25em;
   background-image: linear-gradient(100deg, #01ff40, #1d5134);
   transform: rotate(-45deg);
-  right: 27.5em;
+  right: 26em;
   bottom: 25em;
   border-bottom-left-radius: 90%;
   border-bottom-right-radius: 30%;
@@ -577,12 +577,12 @@ body{
   box-shadow: 0 0 10px #0b0b0b5c;
 }
   @keyframes greens{
-    0%{right: 27.5em; bottom: 25em;}
+    0%{right: 26em; bottom: 25em;}
     40%{right: -10em; bottom: -25em; width: 17.5em; height: 20em; opacity: .5; box-shadow: 0 0 20px #000000;}
     65%{right: 67.5em; bottom: 50em; box-shadow: 0 0 20px #000000f0;}
     70%{z-index: -1;}
     95%{z-index: 0;}
-    100%{right: 27.5em; bottom: 25em;}
+    100%{right: 26em; bottom: 25em;}
   }
 .cloud{
   position: absolute;
