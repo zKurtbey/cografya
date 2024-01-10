@@ -2,8 +2,10 @@ const ust = document.querySelector(".ust");
 const ustukapat = document.querySelector(".ustukapat");
 ustukapat.addEventListener("click", () =>{
   ust.style.height="0";
+  ustukapat.style="display: flex; position: absolute; top: 1em; right: 1em; background-color: rgb(56 38 88)";
   setTimeout(() => {
     ust.style.display="none";
+    ustukapat.style="display: flex; position: absolute; top: 1em; right: 1em; background-color: rgb(56 38 88)";
   }, 600);
 });
 document.querySelector(".sorualani").style.display="none";
