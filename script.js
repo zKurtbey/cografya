@@ -1,11 +1,22 @@
 const ust = document.querySelector(".ust");
 const ustukapat = document.querySelector(".ustukapat");
+let click;
 ustukapat.addEventListener("click", () =>{
+  click++;
+  if(click % 2 === 0){
+  ust.style="top: 0";
+  ustukapat.style="top: 2em; transform: rotate(360deg); border-radius: 10px; width: 45px; height: 45px; right: 2em; background-color: rgb(56 38 88)";
+  setTimeout(() => {
+    ust.style.display="flex";
+  }, 600);
+    click--;
+  } else{
   ust.style="top: -8em";
-  ustukapat.style="display: flex; position: absolute; top: 2em; transform: rotate(180deg); border-radius: 50%; width: 80px; height: 80px; right: 2em; background-color: rgb(56 38 88 / 30%); backdrop-filter: blur(100px)";
+  ustukapat.style="display: flex; position: absolute; top: .75em; transform: rotate(180deg); border-radius: 50%; width: 70px; height: 70px; right: .75em; background-color: rgb(156 138 188 / 30%); backdrop-filter: blur(100px)";
   setTimeout(() => {
     ust.style.display="none";
   }, 600);
+  }
 });
 document.querySelector(".sorualani").style.display="none";
 document.querySelector("#brdr").addEventListener("click", () => {
