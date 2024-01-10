@@ -196,15 +196,12 @@ dogrucvpsikki.forEach((dogrucvpsikki) => {
   sorukonumu = sorukonumu+.25;
   console.log(sorukonumu);
   console.log(dogrucvpsikki);
-});
-  suklar.forEach((suklar) =>{
-    suklar.addEventListener("click", () =>{
-      suklar.style="backdrop-filter: blur(100px); background-color: rgb(231 255 4)";
-      if(suklar == dogrucvp){
-        console.log("dogru"+ suklar);
-      } else{
-        console.log("yanlış"+ suklar);
-      }
+  dogrucvpsikki.addEventListener("click", () =>{
+    dogrucvpsikki.style="backdrop-filter: blur(100px); background-color: rgb(231 255 4)";
+    console.log("yanlış"+ dogrucvpsikki);
     });
+  });
+  dogrucpv.addEventListener("click", ()=>{
+    console.log("doğru");
   });
 }
