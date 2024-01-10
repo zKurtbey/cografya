@@ -215,5 +215,4 @@ function soru(yzlnskkldr, yzlncvpkldr, grckcvpdgr, soru, sorukonumu, dogrucvp, d
       console.log("doğru");
       soru();
     });
-  }
 }
