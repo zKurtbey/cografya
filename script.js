@@ -1,6 +1,6 @@
 const ust = document.querySelector(".ust");
 const ustukapat = document.querySelector(".ustukapat");
-let click;
+let click = 0;
 ustukapat.addEventListener("click", () =>{
   click++;
   if(click % 2 === 0){
