@@ -21,7 +21,6 @@ document.querySelector("#brdr").addEventListener("click", () => {
   document.querySelector('#bottom-green').style="animation: bottom-green 12.5s ease-in-out infinite";
   document.querySelector('.cloud').style="animation: cloud 7.5s ease-in-out infinite";
   });
-});
 function start(){
 var sorular = [
   "Türkiye'nin başkenti nedir?",
