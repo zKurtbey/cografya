@@ -84,10 +84,10 @@ body{
   background-color: #34425c9c;
 }
   @keyframes ust{
-    to{top: -12em;}
+    to{top: -12em; display: none}
   }
   @keyframes ust-rvr{
-    to{top: 0;}
+    to{top: 0; display: flex}
   }
   @keyframes ustukapat{
     to{background-color: rgb(106 88 138 / 30%); backdrop-filter: blur(100px); transform: rotate(180deg); border-radius: 10px;}
@@ -430,10 +430,10 @@ body{
   cursor: pointer;
 }
   @keyframes ust{
-    to{top: -8em;}
+    to{top: -8em; display: none}
   }
   @keyframes ust-rvr{
-    to{top: 0;}
+    to{top: 0; display: flex}
   }
   @keyframes ustukapat{
     to{background-color: rgb(106 88 138 / 30%); backdrop-filter: blur(100px); transform: rotate(180deg); top: .75em; right: .75em; width: 70px; height: 70px; border-radius: 50%;}
