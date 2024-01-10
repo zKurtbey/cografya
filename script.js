@@ -1,7 +1,7 @@
 const ust = document.querySelector(".ust");
 const ustukapat = document.querySelector(".ustukapat");
 ustukapat.addEventListener("click", () =>{
-  ust.style="top: -6em";
+  ust.style="top: -8em";
   ustukapat.style="display: flex; position: absolute; top: 2em; transform: rotate(180deg); border-radius: 50%; width: 80px; height: 80px; right: 2em; background-color: rgb(56 38 88 / 30%); backdrop-filter: blur(100px)";
   setTimeout(() => {
     ust.style.display="none";
