@@ -4,11 +4,11 @@ let click = 0;
 ustukapat.addEventListener("click", () =>{
   click++;
   if(click % 2 === 0){
-    ustukapat.style="animation: ustukapat-rvr 1s ease-in-out forwards";
+    ustukapat.style="animation: ustukapat-rvr 1s forwards";
     ust.style= "animation: ust-rvr .5s forwards";
     } else{
   ust.style="animation: ust .5s forwards";
-  ustukapat.style="animation: ustukapat 1s ease-in-out forwards";
+  ustukapat.style="animation: ustukapat 1s forwards";
   }
 });
 document.querySelector(".sorualani").style.display="none";
