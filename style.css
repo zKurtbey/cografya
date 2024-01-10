@@ -78,7 +78,7 @@ body{
   border-radius: 20px;
   transition: all .20s ease-in-out;
   cursor: pointer;
-  top: 5em;
+  top: 3.5em;
 }
 .ustukapat:hover{
   background-color: #34425c9c;
