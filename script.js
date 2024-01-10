@@ -164,7 +164,7 @@ var sahtesiklar = [
 "Liffey", "Shannon", "Erne", "Lee",
 "Tambora", "Kerinci", "Jaya", "Rantemario"
 ];
-const suklar = document.querySelectorAll(".cevap");
+const suklar = document.querySelectorAll(".suk");
 var yzlnsk;
 var yzlnskkldr;
 var yzlncvp;
