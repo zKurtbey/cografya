@@ -435,7 +435,7 @@ body{
     to{top: 0;}
   }
   @keyframes ustukapat{
-    to{background-color: rgb(106 88 138 / 30%); backdrop-filter: blur(100px); transform: rotate(180deg); top: .75em; right: .75em; width: 70px; height: 70pc; border-radius: 50%;}
+    to{background-color: rgb(106 88 138 / 30%); backdrop-filter: blur(100px); transform: rotate(180deg); top: .75em; right: .75em; width: 70px; height: 70px; border-radius: 50%;}
   }
   @keyframes ustukapat-rvr{
     to{background-color: rgb(56 38 88); transform: rotate(360deg); top: 2em; right: 2em; width: 45px; height: 45px; border-radius: 10px;}
