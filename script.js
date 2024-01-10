@@ -174,6 +174,7 @@ var sahtesiklar = [
   var soru;
   var dogrucvp;
   const suklar = document.querySelectorAll(".suk");
+  soru();
 function soru(yzlnskkldr, yzlncvpkldr, grckcvpdgr, soru, sorukonumu, dogrucvp, dorucvpsikki, cvpdgr, suk, dgrcppl, yzlnsk, yzlncvp){
   soru = sorular[Math.floor(Math.random() * sorular.length)];
   document.querySelector("#sorubaslik").innerHTML=soru;
