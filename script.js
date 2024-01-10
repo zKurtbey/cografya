@@ -2,7 +2,7 @@ const ust = document.querySelector(".ust");
 const ustkapat = document.querySelector(".ustukapat");
 ustukapat.addEventListener("click", () =>{
   ust.style.height="0";
-}
+});
 document.querySelector(".sorualani").style.display="none";
 document.querySelector("#brdr").addEventListener("click", () => {
   document.querySelector("#brdr").style="display: none";
