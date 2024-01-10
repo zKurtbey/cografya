@@ -197,11 +197,12 @@ dogrucvpsikki.forEach((dogrucvpsikki) => {
   console.log(sorukonumu);
   console.log(dogrucvpsikki);
   dogrucvpsikki.addEventListener("click", () =>{
-    dogrucvpsikki.parent.style="backdrop-filter: blur(100px); background-color: rgb(231 255 4)";
+    dogrucvpsikki.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(231 255 4)";
     console.log("yanlış"+ dogrucvpsikki);
     });
   });
   dogrucvp.addEventListener("click", ()=>{
+    dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(231 255 4)";
     console.log("doğru");
   });
 }
