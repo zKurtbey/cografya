@@ -191,12 +191,12 @@ dogrucvpsikki.forEach((dogrucvpsikki) => {
   console.log(sorukonumu);
   console.log(dogrucvpsikki);
   dogrucvpsikki.parentNode.addEventListener("click", () =>{
-    dogrucvpsikki.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(226 18 59 / 60%)";
+    dogrucvpsikki.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(226 18 59 / 60%); display: flex; opacity: 1;";
     console.log("yanlış");
   });
 });
   dogrucvp.parentNode.addEventListener("click", ()=>{
-    dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 60%)";
+    dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 60%); display: flex; opacity: 1;";
     console.log("doğru");
   });
 }
