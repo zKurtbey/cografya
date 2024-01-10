@@ -1,5 +1,5 @@
 const ust = document.querySelector(".ust");
-const ustkapat = document.querySelector(".ustukapat");
+const ustukapat = document.querySelector(".ustukapat");
 ustukapat.addEventListener("click", () =>{
   ust.style.height="0";
 });
