@@ -2,6 +2,9 @@ const ust = document.querySelector(".ust");
 const ustukapat = document.querySelector(".ustukapat");
 ustukapat.addEventListener("click", () =>{
   ust.style.height="0";
+  setTimeout(() => {
+    ust.style.display="none";
+  }, 600);
 });
 document.querySelector(".sorualani").style.display="none";
 document.querySelector("#brdr").addEventListener("click", () => {
