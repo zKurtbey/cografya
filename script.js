@@ -197,6 +197,9 @@ function soru(yzlnskkldr, yzlncvpkldr, grckcvpdgr, soru, sorukonumu, dogrucvp, d
     sorukonumu = sorukonumu+.25;
     console.log(sorukonumu);
     console.log(dogrucvpsikki);
+  });
+}
+  dogrucvpsikki.forEach((dogrucvpsikki) =>{
     dogrucvpsikki.parentNode.addEventListener("click", () =>{
       dogrucvpsikki.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(226 18 59 / 20%); opacity: 1;";
       console.log("yanlış");
