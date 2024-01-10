@@ -5,13 +5,13 @@ ustukapat.addEventListener("click", () =>{
   click++;
   if(click % 2 === 0){
     ust.style.display="flex";
-    ustukapat.style="top: 2em; transform: rotate(360deg); border-radius: 10px; width: 45px; height: 45px; right: 2em; background-color: rgb(56 38 88)";
+    ustukapat.style="animation: ustukapat-rvr 1s ease-in-out forwards";
     setTimeout(() => {
-      ust.style= "top: 0";
+      ust.style= "animation: ust-rvr .5s forwards";
     }, 1);
     } else{
-  ust.style="top: -8em";
-  ustukapat.style="display: flex; position: absolute; top: .75em; transform: rotate(180deg); border-radius: 50%; width: 70px; height: 70px; right: .75em; background-color: rgb(106 88 138 / 30%); backdrop-filter: blur(100px)";
+  ust.style="animation: ust .5s forwards";
+  ustukapat.style="animation: ustukapat 1s ease-in-out forwards";
   setTimeout(() => {
     ust.style.display="none";
   }, 600);
