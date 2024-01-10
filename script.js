@@ -164,6 +164,7 @@ var sahtesiklar = [
 "Liffey", "Shannon", "Erne", "Lee",
 "Tambora", "Kerinci", "Jaya", "Rantemario"
 ];
+const suklar = document.querySelectorAll(".cevap");
 var yzlnsk;
 var yzlnskkldr;
 var yzlncvp;
@@ -196,4 +197,19 @@ dogrucvpsikki.forEach((dogrucvpsikki) => {
   console.log(sorukonumu);
   console.log(dogrucvpsikki);
 });
+    let tik = 0;
+  suklar.forEach((suklar) => {
+    suklar.addEventListener("click", () =>{
+      if(tik %2 === 0){
+        suklar.style="backdrop-filter: blur(100px); background-color: rgb(231 255 4 / 30%)";
+        var secilencevap = suklar;
+        if(secilencevap == dogrucvp){
+          console.log("dogru");
+        } else{
+          console.log("yanlış");
+        }
+      } else{
+        suklar.style="border: "1px solid rgb(231 255 4 / 80%)";
+      }
+    }
 }
