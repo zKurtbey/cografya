@@ -288,7 +288,7 @@ body{
   text-shadow: 0 0 10px rgb(25 26 26 / 50%);
 }
 .sorualani{
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -685,7 +685,7 @@ body{
   text-shadow: 0 0 10px rgb(25 26 26 / 50%);
 }
 .sorualani{
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
