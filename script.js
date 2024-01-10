@@ -1,6 +1,6 @@
 const ust = document.querySelector(".ust");
 const ustukapat = document.querySelector(".ustukapat");
-let click;
+let click = 1;
 ustukapat.addEventListener("click", () =>{
   click++;
   if(click % 2 === 0){
@@ -9,7 +9,6 @@ ustukapat.addEventListener("click", () =>{
   setTimeout(() => {
     ust.style.display="flex";
   }, 600);
-    click--;
   } else{
   ust.style="top: -8em";
   ustukapat.style="display: flex; position: absolute; top: .75em; transform: rotate(180deg); border-radius: 50%; width: 70px; height: 70px; right: .75em; background-color: rgb(156 138 188 / 30%); backdrop-filter: blur(100px)";
