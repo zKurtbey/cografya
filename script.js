@@ -210,7 +210,7 @@ function soru(yzlnskkldr, yzlncvpkldr, grckcvpdgr, soru, sorukonumu, dogrucvp, d
     dogrucvp.parentNode.addEventListener("click", ()=>{
       dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 20%);opacity: 1;";
       console.log("doğru");
-      soru(yzlnskkldr, yzlncvpkldr, grckcvpdgr, soru, sorukonumu, dogrucvp, dorucvpsikki, cvpdgr, suk, dgrcppl, yzlnsk, yzlncvp);
+      soru();
     });
   }
 }
