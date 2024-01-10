@@ -209,7 +209,7 @@ dogrucvpsikki.forEach((dogrucvpsikki) => {
           console.log("yanlış");
         }
       } else{
-        suklar.style="border: "1px solid rgb(231 255 4 / 80%)";
+          suklar.style="border: 1px solid rgb(231 255 4 / 80%)";
       }
     }
 }
