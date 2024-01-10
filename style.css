@@ -45,14 +45,14 @@ body{
   font-size: 22.5px;
   height: 120px;
   position: absolute;
-  left: 5em;
+  left: 2.5em;
   filter: drop-shadow(0px 0px 10px #6e6db3);
 }
 #siteadi{
   color: rgb(240, 232, 255);
-  font-family: system-ui, helvetica;
+  font-family: helvetica;
   position: absolute;
-  margin-left: 8.5em;
+  margin-left: 5.5em;
   font-weight: bolder;
   font-size: 30px;
 }
@@ -382,14 +382,14 @@ body{
   font-size: 15px;
   height: 80px;
   position: absolute;
-  left: 5em;
+  left: 2.5em;
   filter: drop-shadow(0px 0px 10px #6e6db3);
 }
 #siteadi{
   color: rgb(240, 232, 255);
-  font-family: system-ui, helvetica;
+  font-family: helvetica;
   position: absolute;
-  margin-left: 7em;
+  margin-left: 5em;
   font-weight: bolder;
 }
 .digeryarismalar{
