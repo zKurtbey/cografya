@@ -41,44 +41,6 @@ body{
   justify-content: center;
   text-align: center;
 }
-.accesit:hover{
-  background-color: #34425c9c;
-}
-#down-arrow{
-  height: 71.25px;
-  margin-top: 7.5px;
-}
-.cesit{
-  flex-direction: column;
-  align-items: left;
-  padding-left: 2.25em;
-  justify-content: flex-start;
-  text-align: left;
-  background-color: rgb(28 12 57);
-  position: absolute;
-  width: 22.5em;
-  height: 100.5em;
-  top: 12em;
-  box-shadow: rgb(0 0 0 / 50%) 0px 0px 15px;
-  backdrop-filter: blur(50px);
-  display: none;
-}
-.soruces{
-  margin-top: 2.25em;
-  margin-bottom: 2.25em;
-  font-family: system-ui, helvetica;
-  font-size: 22.5px;
-  color: rgba(250, 220, 250, .8);
-  cursor: pointer;
-  width: 6em;
-  display: inline-block;
-  transition: all 0.15s cubic-bezier(0, 0.53, 1, 1);
-}
-.soruces:hover{
-  display: inline-block;
-  text-decoration: underline;
-  color: rgb(170, 150, 170);
-}
 #earth{
   font-size: 22.5px;
   height: 120px;
@@ -415,57 +377,6 @@ body{
   left: 0;
   box-shadow: rgb(56 38 88) 0px 0px 15px;
   transition: all .5s;
-}
-.accesit{
-  height: 45px;
-  width: 45px;
-  position: relative;
-  left: 1em;
-  border-radius: 10px;
-  transition: all .20s ease-in-out;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.accesit:hover{
-  background-color: #34425c9c;
-}
-#down-arrow{
-  height: 47.5px;
-  margin-top: 5px;
-}
-.cesit{
-  flex-direction: column;
-  align-items: left;
-  padding-left: 1em;
-  justify-content: flex-start;
-  text-align: left;
-  background-color: rgb(28 12 57);
-  position: absolute;
-  width: 15em;
-  height: 67em;
-  top: 8em;
-  box-shadow: rgb(0 0 0 / 50%) 0px 0px 15px;
-  backdrop-filter: blur(50px);
-  display: none;
-}
-.soruces{
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  font-family: system-ui, helvetica;
-  font-size: 17.5px;
-  color: rgba(250, 220, 250, .8);
-  cursor: pointer;
-  width: 6em;
-  display: inline-block;
-  transition: all 0.15s cubic-bezier(0, 0.53, 1, 1);
-}
-.soruces:hover{
-  display: inline-block;
-  text-decoration: underline;
-  color: rgb(170, 150, 170);
 }
 #earth{
   font-size: 15px;
