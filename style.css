@@ -93,6 +93,7 @@ body{
     to{background-color: rgb(106 88 138 / 30%); backdrop-filter: blur(100px); transform: rotate(180deg); border-radius: 10px;}
   }
   @keyframes ustukapat-rvr{
+    from{transform: rotate(180deg);}
     to{background-color: rgb(56 38 88); transform: rotate(360deg); border-radius: 20px;}
   }
 /*sun*/
@@ -438,6 +439,7 @@ body{
     to{background-color: rgb(106 88 138 / 30%); backdrop-filter: blur(100px); transform: rotate(180deg); top: .75em; right: .75em; width: 70px; height: 70px; border-radius: 50%;}
   }
   @keyframes ustukapat-rvr{
+    from{transform: rotate(180deg);}
     to{background-color: rgb(56 38 88); transform: rotate(360deg); top: 2em; right: 2em; width: 45px; height: 45px; border-radius: 10px;}
   }
 /*sun*/
