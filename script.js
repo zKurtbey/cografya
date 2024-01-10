@@ -4,17 +4,11 @@ let click = 0;
 ustukapat.addEventListener("click", () =>{
   click++;
   if(click % 2 === 0){
-    ust.style.display="flex";
     ustukapat.style="animation: ustukapat-rvr 1s ease-in-out forwards";
-    setTimeout(() => {
-      ust.style= "animation: ust-rvr .5s forwards";
-    }, 1);
+    ust.style= "animation: ust-rvr .5s forwards";
     } else{
   ust.style="animation: ust .5s forwards";
   ustukapat.style="animation: ustukapat 1s ease-in-out forwards";
-  setTimeout(() => {
-    ust.style.display="none";
-  }, 600);
   }
 });
 document.querySelector(".sorualani").style.display="none";
