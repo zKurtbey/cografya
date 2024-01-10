@@ -20,11 +20,6 @@ document.querySelector("#brdr").addEventListener("click", () => {
   document.querySelector('.greens').style="animation: greens 12.5s ease-in-out infinite";
   document.querySelector('#bottom-green').style="animation: bottom-green 12.5s ease-in-out infinite";
   document.querySelector('.cloud').style="animation: cloud 7.5s ease-in-out infinite";
-  const skan = document.querySelectorAll(".suk");
-  skan.forEach((skan) => {
-    setTimeout(() => {
-      skan.style="opacity: 1";
-    }, 350);
   });
 });
 function start(){
@@ -197,12 +192,12 @@ dogrucvpsikki.forEach((dogrucvpsikki) => {
   console.log(sorukonumu);
   console.log(dogrucvpsikki);
   dogrucvpsikki.parentNode.addEventListener("click", () =>{
-    dogrucvpsikki.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(226 18 59 / 30%)";
+    dogrucvpsikki.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(226 18 59 / 60%)";
     console.log("yanlış");
   });
 });
   dogrucvp.parentNode.addEventListener("click", ()=>{
-    dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 30%)";
+    dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 60%)";
     console.log("doğru");
   });
 }
