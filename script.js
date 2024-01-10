@@ -158,45 +158,58 @@ var sahtesiklar = [
 "Liffey", "Shannon", "Erne", "Lee",
 "Tambora", "Kerinci", "Jaya", "Rantemario"
 ];
-const suklar = document.querySelectorAll(".suk");
-var yzlnsk;
-var yzlnskkldr;
-var yzlncvp;
-var yzlncvpkldr;
-var soru = sorular[Math.floor(Math.random() * sorular.length)];
-document.querySelector("#sorubaslik").innerHTML=soru;
-var sorukonumu = sorular.indexOf(soru);
-console.log(sorukonumu);
-var dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]]; 
-var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
-var grckcvpdgr;
-grckcvpdgr = siklar.splice(sorukonumu, 1);
-dogrucvp.innerHTML=grckcvpdgr;
-yzlnsk = dogrucvpsikki.indexOf(dogrucvp);
-yzlnskkldr = dogrucvpsikki.splice(yzlnsk, 1);
   var cvpdgr;
-var suk;
-var sukdgr;
-var dgrcvppl;
-var ynlscvp;
-  sorukonumu = sorukonumu * 4;
-console.log(sorukonumu);
-
-dogrucvpsikki.forEach((dogrucvpsikki) => {
-  sukdgr = sahtesiklar.splice(sorukonumu, 1);
-  dogrucvpsikki.innerHTML = sukdgr;
-  yzlnsk = sahtesiklar.indexOf(sorukonumu);
-  yzlnskkldr = sahtesiklar.splice(yzlnsk, 1);
-  sorukonumu = sorukonumu+.25;
+  var suk;
+  var sukdgr;
+  var dgrcvppl;
+  var ynlscvp;
+  var yzlnsk;
+  var yzlnskkldr;
+  var yzlncvp;
+  var yzlncvpkldr;
+  var soru;
+  var dogrucvpsikki;
+  var grckcvpdgr;
+  var sorukonumu;
+  var soru;
+  var dogrucvp;
+  const suklar = document.querySelectorAll(".suk");
+function soru(yzlnskkldr, yzlncvpkldr, grckcvp){
+  soru = sorular[Math.floor(Math.random() * sorular.length)];
+  document.querySelector("#sorubaslik").innerHTML=soru;
+  sorukonumu = sorular.indexOf(soru);
   console.log(sorukonumu);
-  console.log(dogrucvpsikki);
-  dogrucvpsikki.parentNode.addEventListener("click", () =>{
-    dogrucvpsikki.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(226 18 59 / 60%); display: flex; opacity: 1;";
-    console.log("yanlış");
+  dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]]; 
+  dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
+  grckcvpdgr = siklar.splice(sorukonumu, 1);
+  dogrucvp.innerHTML=grckcvpdgr;
+  yzlnsk = dogrucvpsikki.indexOf(dogrucvp);
+  yzlnskkldr = dogrucvpsikki.splice(yzlnsk, 1);
+  
+  sorukonumu = sorukonumu * 4;
+  console.log(sorukonumu);
+  dogrucvpsikki.forEach((dogrucvpsikki) => {
+    sukdgr = sahtesiklar.splice(sorukonumu, 1);
+    dogrucvpsikki.innerHTML = sukdgr;
+    yzlnsk = sahtesiklar.indexOf(sorukonumu);
+    yzlnskkldr = sahtesiklar.splice(yzlnsk, 1);
+    sorukonumu = sorukonumu+.25;
+    console.log(sorukonumu);
+    console.log(dogrucvpsikki);
+    dogrucvpsikki.parentNode.addEventListener("click", () =>{
+      dogrucvpsikki.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(226 18 59 / 20%); opacity: 1;";
+      console.log("yanlış");
+      document.querySelector(".world").style.animation="";
+      document.querySelector(".moon").style.animation="";
+      document.querySelector(".greens").style.animation="";
+      document.querySelector("#bottom-green").style.animation="";
+      document.querySelector(".cloud").style.animation="";
+    });
   });
-});
-  dogrucvp.parentNode.addEventListener("click", ()=>{
-    dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 60%); display: flex; opacity: 1;";
-    console.log("doğru");
-  });
+    dogrucvp.parentNode.addEventListener("click", ()=>{
+      dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 20%);opacity: 1;";
+      console.log("doğru");
+      soru(yzlnskkldr, yzlncvpkldr, grckcvp);
+    });
+  }
 }
