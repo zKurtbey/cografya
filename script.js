@@ -211,5 +211,6 @@ dogrucvpsikki.forEach((dogrucvpsikki) => {
       } else{
           suklar.style="border: 1px solid rgb(231 255 4 / 80%)";
       }
-    }
+    });
+  }
 }
