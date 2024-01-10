@@ -87,6 +87,7 @@ body{
     to{top: -12em; display: none}
   }
   @keyframes ust-rvr{
+    from{top: -12em; display: none;}
     to{top: 0; display: flex}
   }
   @keyframes ustukapat{
@@ -433,6 +434,7 @@ body{
     to{top: -8em; display: none}
   }
   @keyframes ust-rvr{
+    from{top: -8em; display: none;}
     to{top: 0; display: flex}
   }
   @keyframes ustukapat{
