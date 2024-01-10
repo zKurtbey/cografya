@@ -196,13 +196,13 @@ dogrucvpsikki.forEach((dogrucvpsikki) => {
   sorukonumu = sorukonumu+.25;
   console.log(sorukonumu);
   console.log(dogrucvpsikki);
-  dogrucvpsikki.addEventListener("click", () =>{
-    dogrucvpsikki.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(231 255 4)";
-    console.log("yanlış"+ dogrucvpsikki);
-    });
+  dogrucvpsikki.parentNode.addEventListener("click", () =>{
+    dogrucvpsikki.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(226 18 59 / 30%)";
+    console.log("yanlış");
   });
-  dogrucvp.addEventListener("click", ()=>{
-    dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(231 255 4)";
+});
+  dogrucvp.parentNode.addEventListener("click", ()=>{
+    dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 30%)";
     console.log("doğru");
   });
 }
