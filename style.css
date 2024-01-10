@@ -124,11 +124,12 @@ body{
   justify-content: center;
   width: 67.75px;
   height: 67.75px;
-  position: relative;
+  position: absolute;
   right: 3em;
   border-radius: 20px;
   transition: all .20s ease-in-out;
   cursor: pointer;
+  top: 2em;
 }
 .ustukapat:hover{
   background-color: #34425c9c;
@@ -510,7 +511,8 @@ body{
   justify-content: center;
   width: 45px;
   height: 45px;
-  position: relative;
+  position: absolute;
+  top: 2em;
   right: 2em;
   border-radius: 10px;
   transition: all .20s ease-in-out;
