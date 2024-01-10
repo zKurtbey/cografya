@@ -197,7 +197,7 @@ dogrucvpsikki.forEach((dogrucvpsikki) => {
   console.log(sorukonumu);
   console.log(dogrucvpsikki);
   dogrucvpsikki.addEventListener("click", () =>{
-    dogrucvpsikki.style="backdrop-filter: blur(100px); background-color: rgb(231 255 4)z";
+    dogrucvpsikki.parent.style="backdrop-filter: blur(100px); background-color: rgb(231 255 4)";
     console.log("yanlış"+ dogrucvpsikki);
     });
   });
