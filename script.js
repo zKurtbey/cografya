@@ -167,11 +167,9 @@ var sahtesiklar = [
   var yzlncvp;
   var yzlncvpkldr;
   var soru;
-  var dogrucvpsikki;
   var grckcvpdgr;
   var sorukonumu;
   var soru;
-  var dogrucvp;
 var yzlnshtsk;
 var yzlnshtskkldr;
 var yzlnsrkldr;
@@ -183,8 +181,8 @@ function start(){
   sorukonumu = sorular.indexOf(soru);
   yzlnsrkldr = sorular.splice(sorukonumu, 1);
   console.log(sorukonumu);
-  dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]]; 
-  dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
+  var dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]]; 
+  var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
   grckcvpdgr = siklar.splice(sorukonumu, 1);
   dogrucvp.innerHTML=grckcvpdgr;
   yzlnsk = dogrucvpsikki.indexOf(dogrucvp);
@@ -211,12 +209,14 @@ function kontrol(dogrucvpsikki, dogrucvp){
     });
   });
     dogrucvp.parentNode.addEventListener("click", ()=>{
-      dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 20%);opacity: 1;";
+      dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 20%);opacity: 1";
       console.log("doğru");
       dogrucvpsikki.forEach((dogrucvpsikki) => {
         dogrucvpsikki = "";
         console.log(dogrucvpsikki);
       });
+      console.log(dogrucvpsikki);
+      console.log(dogrucvp);
       dogrucvp = "";
       start();
     });
