@@ -162,8 +162,6 @@ var sahtesiklar = [
   var sukdgr;
   var dgrcvppl;
   var ynlscvp;
-  var yzlnsk;
-  var yzlnskkldr;
   var yzlncvp;
   var yzlncvpkldr;
   var soru;
@@ -185,8 +183,8 @@ function start(){
   var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
   grckcvpdgr = siklar.splice(sorukonumu, 1);
   dogrucvp.innerHTML=grckcvpdgr;
-  yzlnsk = dogrucvpsikki.indexOf(dogrucvp);
-  yzlnskkldr = dogrucvpsikki.splice(yzlnsk, 1);
+  var yzlnsk = dogrucvpsikki.indexOf(dogrucvp);
+  var yzlnskkldr = dogrucvpsikki.splice(yzlnsk, 1);
   sorukonumu = sorukonumu * 4;
   console.log(sorukonumu);
   dogrucvpsikki.forEach((dogrucvpsikki) => {
