@@ -21,7 +21,6 @@ document.querySelector("#brdr").addEventListener("click", () => {
   document.querySelector('#bottom-green').style="animation: bottom-green 12.5s ease-in-out infinite";
   document.querySelector('.cloud').style="animation: cloud 7.5s ease-in-out infinite";
   });
-function start(){
 var sorular = [
   "Türkiye'nin başkenti nedir?",
   "Dünyanın en büyük okyanusu hangisidir?",
@@ -158,8 +157,6 @@ var sahtesiklar = [
 "Liffey", "Shannon", "Erne", "Lee",
 "Tambora", "Kerinci", "Jaya", "Rantemario"
 ];
-  soru();
-function soru(){
   var cvpdgr;
   var suk;
   var sukdgr;
@@ -175,6 +172,7 @@ function soru(){
   var sorukonumu;
   var soru;
   var dogrucvp;
+function start(){
   const suklar = document.querySelectorAll(".suk");
   soru = sorular[Math.floor(Math.random() * sorular.length)];
   document.querySelector("#sorubaslik").innerHTML=soru;
@@ -198,7 +196,6 @@ function soru(){
     console.log(sorukonumu);
     console.log(dogrucvpsikki);
   });
-}
   dogrucvpsikki.forEach((dogrucvpsikki) =>{
     dogrucvpsikki.parentNode.addEventListener("click", () =>{
       dogrucvpsikki.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(226 18 59 / 20%); opacity: 1;";
@@ -213,6 +210,6 @@ function soru(){
     dogrucvp.parentNode.addEventListener("click", ()=>{
       dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 20%);opacity: 1;";
       console.log("doğru");
-      soru();
+      start();
     });
 }
