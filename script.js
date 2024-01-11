@@ -157,10 +157,6 @@ var sahtesiklar = [
 "Liffey", "Shannon", "Erne", "Lee",
 "Tambora", "Kerinci", "Jaya", "Rantemario"
 ];
-function start(){
-  if(dogrucvp){
-    dogrucvp.parentNode.style="";
-  }
   var cvpdgr;
   var suk;
   var sukdgr;
@@ -179,6 +175,8 @@ function start(){
 var yzlnshtsk;
 var yzlnshtskkldr;
 var yzlnsrkldr;
+  
+function start(){
   const suklar = document.querySelectorAll(".suk");
   soru = sorular[Math.floor(Math.random() * sorular.length)];
   document.querySelector("#sorubaslik").innerHTML=soru;
@@ -202,23 +200,24 @@ var yzlnsrkldr;
     console.log(sorukonumu);
     console.log(dogrucvpsikki);
   });
+}
   dogrucvpsikki.forEach((dogrucvpsikki) =>{
     dogrucvpsikki.parentNode.addEventListener("click", () =>{
       dogrucvpsikki.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(226 18 59 / 20%); opacity: 1;";
       console.log("yanlış");
       yanlis();
-      dogrucvpsikki.forEach((dogrucvpsikki) => {
-        dogrucvpsikki = "";
-      }
     });
   });
     dogrucvp.parentNode.addEventListener("click", ()=>{
       dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 20%);opacity: 1;";
       console.log("doğru");
-      start();
+      dogrucvpsikki.forEach((dogrucvpsikki) => {
+        dogrucvpsikki = "";
+        console.log(dogrucvpsikki);
+      }
       dogrucvp = "";
+      start();
     });
-}
 function yanlis(){
       document.querySelector(".world").style.animation="";
       document.querySelector(".moon").style.animation="";
