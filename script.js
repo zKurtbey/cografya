@@ -194,7 +194,7 @@ function start(){
     sukdgr = sahtesiklar.splice(sorukonumu, 1);
     dogrucvpsikki.innerHTML = sukdgr;
     yzlnshtsk = sahtesiklar.indexOf(sorukonumu);
-    yzlnshtskkldr = sahtesiklar.splice(yzlnsk, 1);
+    yzlnshtskkldr = sahtesiklar.splice(yzlnshtsk, .25);
     sorukonumu = sorukonumu+.25;
     console.log(sorukonumu);
     console.log(dogrucvpsikki);
