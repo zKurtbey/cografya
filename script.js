@@ -174,11 +174,13 @@ var sahtesiklar = [
   var dogrucvp;
 var yzlnshtsk;
 var yzlnshtskkldr;
+var yzlnsrkldr;
 function start(){
   const suklar = document.querySelectorAll(".suk");
   soru = sorular[Math.floor(Math.random() * sorular.length)];
   document.querySelector("#sorubaslik").innerHTML=soru;
   sorukonumu = sorular.indexOf(soru);
+  yzlnsrkldr = sorular.splice(sorukonumu, 1);
   console.log(sorukonumu);
   dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]]; 
   dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
