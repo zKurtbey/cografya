@@ -168,8 +168,8 @@ var sahtesiklar = [
   var grckcvpdgr;
   var sorukonumu;
   var soru;
-var yzlnsr; 
-var yzlnsrkldr;
+var yzlnsk; 
+var yzlnskkldr;
 var dogrucvp;
 var dogrucvpsikki;
 var yzlnshtsk;
