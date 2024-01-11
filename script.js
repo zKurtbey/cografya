@@ -200,7 +200,9 @@ function start(){
     console.log(sorukonumu);
     console.log(dogrucvpsikki);
   });
+  kontrol(dogrucvpsikki, dogrucvp);
 }
+function kontrol(dogrucvpsikki, dogrucvp){
   dogrucvpsikki.forEach((dogrucvpsikki) =>{
     dogrucvpsikki.parentNode.addEventListener("click", () =>{
       dogrucvpsikki.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(226 18 59 / 20%); opacity: 1;";
@@ -218,6 +220,7 @@ function start(){
       dogrucvp = "";
       start();
     });
+}
 function yanlis(){
       document.querySelector(".world").style.animation="";
       document.querySelector(".moon").style.animation="";
