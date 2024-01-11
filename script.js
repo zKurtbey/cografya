@@ -214,7 +214,7 @@ function start(){
       dogrucvpsikki.forEach((dogrucvpsikki) => {
         dogrucvpsikki = "";
         console.log(dogrucvpsikki);
-      }
+      });
       dogrucvp = "";
       start();
     });
