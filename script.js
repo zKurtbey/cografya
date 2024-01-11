@@ -168,6 +168,10 @@ var sahtesiklar = [
   var grckcvpdgr;
   var sorukonumu;
   var soru;
+var yzlnsr; 
+var yzlnsrkldr;
+var dogrucvp;
+var dogrucvpsikki;
 var yzlnshtsk;
 var yzlnshtskkldr;
 var yzlnsrkldr;
@@ -179,12 +183,11 @@ function start(){
   sorukonumu = sorular.indexOf(soru);
   yzlnsrkldr = sorular.splice(sorukonumu, 1);
   console.log(sorukonumu);
-  var dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]]; 
-  var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
+  dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]]; 
+  dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
   grckcvpdgr = siklar.splice(sorukonumu, 1);
   dogrucvp.innerHTML=grckcvpdgr;
-  var yzlnsk = dogrucvpsikki.indexOf(dogrucvp);
-  var yzlnskkldr = dogrucvpsikki.splice(yzlnsk, 1);
+  skkldr(yzlnsk, yzlnskkldr);
   sorukonumu = sorukonumu * 4;
   console.log(sorukonumu);
   dogrucvpsikki.forEach((dogrucvpsikki) => {
@@ -196,6 +199,10 @@ function start(){
     console.log(sorukonumu);
     console.log(dogrucvpsikki);
   });
+}
+function skkldr(yzlnsk, yzlnskkldr){ 
+  yzlnsk = dogrucvpsikki.indexOf(dogrucvp);
+  yzlnskkldr = dogrucvpsikki.splice(yzlnsk, 1);
   kontrol(dogrucvpsikki, dogrucvp);
 }
 function kontrol(dogrucvpsikki, dogrucvp){
