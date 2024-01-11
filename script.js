@@ -157,6 +157,10 @@ var sahtesiklar = [
 "Liffey", "Shannon", "Erne", "Lee",
 "Tambora", "Kerinci", "Jaya", "Rantemario"
 ];
+function start(){
+  if(dogrucvp){
+    dogrucvp.parentNode.style="";
+  }
   var cvpdgr;
   var suk;
   var sukdgr;
@@ -175,7 +179,6 @@ var sahtesiklar = [
 var yzlnshtsk;
 var yzlnshtskkldr;
 var yzlnsrkldr;
-function start(){
   const suklar = document.querySelectorAll(".suk");
   soru = sorular[Math.floor(Math.random() * sorular.length)];
   document.querySelector("#sorubaslik").innerHTML=soru;
@@ -218,4 +221,5 @@ function yanlis(){
       document.querySelector(".greens").style.animation="";
       document.querySelector("#bottom-green").style.animation="";
       document.querySelector(".cloud").style.animation="";
+  document.querySelector(".sorualani").style="scale: 0";
 }
