@@ -157,6 +157,7 @@ var sahtesiklar = [
 "Liffey", "Shannon", "Erne", "Lee",
 "Tambora", "Kerinci", "Jaya", "Rantemario"
 ];
+  const suklar = document.querySelectorAll(".suk");
   var cvpdgr;
   var suk;
   var sukdgr;
@@ -171,7 +172,7 @@ var sahtesiklar = [
 var yzlnsk; 
 var yzlnskkldr;
 var dogrucvp;
-var dogrucvpsikki;
+var dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]];
 var yzlnshtsk;
 var yzlnshtskkldr;
 var yzlnsrkldr;
@@ -179,61 +180,37 @@ var yzlnsrkldr;
 function start(){
   dogrucvpsikki= [""];
   dogrucdvp = "";
-  const suklar = document.querySelectorAll(".suk");
+  console.log(dogrucvpsikki);
+  console.log(dogrucvp);
   soru = sorular[Math.floor(Math.random() * sorular.length)];
   document.querySelector("#sorubaslik").innerHTML=soru;
   sorukonumu = sorular.indexOf(soru);
   yzlnsrkldr = sorular.splice(sorukonumu, 1);
-  console.log(sorukonumu);
-  dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]]; 
   dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
   grckcvpdgr = siklar.splice(sorukonumu, 1);
   dogrucvp.innerHTML=grckcvpdgr;
-  skkldr(yzlnsk, yzlnskkldr);
-  sorukonumu = sorukonumu * 4;
-  console.log(sorukonumu);
-  dogrucvpsikki.forEach((dogrucvpsikki) => {
-    sukdgr = sahtesiklar.splice(sorukonumu, 1);
-    dogrucvpsikki.innerHTML = sukdgr;
-    yzlnshtsk = sahtesiklar.indexOf(sorukonumu);
-    yzlnshtskkldr = sahtesiklar.splice(yzlnshtsk, .25);
-    sorukonumu = sorukonumu+.25;
-    console.log(sorukonumu);
-    console.log(dogrucvpsikki);
-  });
-}
-function dogru(){
-  dogrucvpsikki= [""];
-  dogrucdvp = "";
-  const suklar = document.querySelectorAll(".suk");
-  soru = sorular[Math.floor(Math.random() * sorular.length)];
-  document.querySelector("#sorubaslik").innerHTML=soru;
-  sorukonumu = sorular.indexOf(soru);
-  yzlnsrkldr = sorular.splice(sorukonumu, 1);
-  console.log(sorukonumu);
-  dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]]; 
-  dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
-  grckcvpdgr = siklar.splice(sorukonumu, 1);
-  dogrucvp.innerHTML=grckcvpdgr;
-  skkldr(yzlnsk, yzlnskkldr);
-  sorukonumu = sorukonumu * 4;
-  console.log(sorukonumu);
-  dogrucvpsikki.forEach((dogrucvpsikki) => {
-    sukdgr = sahtesiklar.splice(sorukonumu, 1);
-    dogrucvpsikki.innerHTML = sukdgr;
-    yzlnshtsk = sahtesiklar.indexOf(sorukonumu);
-    yzlnshtskkldr = sahtesiklar.splice(yzlnshtsk, .25);
-    sorukonumu = sorukonumu+.25;
-    console.log(sorukonumu);
-    console.log(dogrucvpsikki);
-  });
-}
-function skkldr(yzlnsk, yzlnskkldr){ 
   yzlnsk = dogrucvpsikki.indexOf(dogrucvp);
   yzlnskkldr = dogrucvpsikki.splice(yzlnsk, 1);
+  sorukonumu = sorukonumu * 4;
+  dogrucvpsikki.forEach((dogrucvpsikki) => {
+    sukdgr = sahtesiklar.splice(sorukonumu, 1);
+    dogrucvpsikki.innerHTML = sukdgr;
+    yzlnshtsk = sahtesiklar.indexOf(sorukonumu);
+    yzlnshtskkldr = sahtesiklar.splice(yzlnshtsk, .25);
+    sorukonumu = sorukonumu+.25;
+  });
   kontrol(dogrucvpsikki, dogrucvp);
 }
 function kontrol(dogrucvpsikki, dogrucvp){
+  console.log(dogrucvpsikki);
+  console.log(dogrucvp);
+    dogrucvp.parentNode.addEventListener("click", ()=>{
+      dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 20%);opacity: 1";
+      console.log("doğru");
+      console.log(dogrucvpsikki);
+      console.log(dogrucvp);
+      start();
+    });
   dogrucvpsikki.forEach((dogrucvpsikki) =>{
     dogrucvpsikki.parentNode.addEventListener("click", () =>{
       dogrucvpsikki.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(226 18 59 / 20%); opacity: 1;";
@@ -241,13 +218,6 @@ function kontrol(dogrucvpsikki, dogrucvp){
       yanlis();
     });
   });
-    dogrucvp.parentNode.addEventListener("click", ()=>{
-      dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 20%);opacity: 1";
-      console.log("doğru");
-      console.log(dogrucvpsikki);
-      console.log(dogrucvp);
-      dogru();
-    });
 }
 function yanlis(){
       document.querySelector(".world").style.animation="";
