@@ -209,6 +209,7 @@ function start(){
     sorukonumu = sorukonumu+.25;
     dogrucvpsikki.parentElement.addEventListener("click", ()=>{
       dogrucvpsikki.parentElement.style="background-color: rgb(252 20 20 / 30%)";
+      wrong.currentTime = 0;
       wrong.play();
   setTimeout(() => {
     wrong.pause();
@@ -217,6 +218,7 @@ function start(){
     });
   });
   dogrucvp.parentElement.addEventListener("click", ()=>{
+    correct.currentTime = 0;
     correct.play();
     dogrucvp.parentElement.style="background-color: rgb(16 243 24 / 30%)";
     setTimeout(() => {
