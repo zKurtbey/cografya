@@ -201,19 +201,18 @@ function start(){
   });
   console.log(dogrucvpsikki);
   console.log(dogrucvp);
-  kontrol(dogrucvpsikki, dogrucvp);
   dogrucvp.parentNode.addEventListener("click", ()=>{
       dogru(dogrucvp);
   });
 }
-function dogru(){
+function dogru(dogrucvp){
   dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 20%);opacity: 1";
       console.log("doğru");
       console.log(dogrucvpsikki);
       console.log(dogrucvp);
       start();
 }
-function yanlis(){
+function yanlis(dogrucvpsikki){
       document.querySelector(".world").style.animation="";
       document.querySelector(".moon").style.animation="";
       document.querySelector(".greens").style.animation="";
