@@ -11,10 +11,9 @@ ustukapat.addEventListener("click", () =>{
   ustukapat.style="animation: ustukapat 1s forwards";
   }
 });
-document.querySelector(".sorualani").style.display="none";
 document.querySelector("#brdr").addEventListener("click", () => {
+  document.querySelector(".sorualani").style="animation: sorualani .5s ease-in-out forwards";
   document.querySelector("#brdr").style="display: none";
-  document.querySelector(".sorualani").style="display: flex; animation: sorualani 1s ease-in-out forwards";
   start();
   document.querySelector(".moon").style="animation: uydu 17.5s ease-in-out infinite";
   document.querySelector('.greens').style="animation: greens 12.5s ease-in-out infinite";
@@ -177,6 +176,18 @@ var yzlnsrkldr;
 var dogrucvp;
 var dogrucvpsikki;
 function start(){
+  document.querySelectorAll(".cevap").forEach((cevap) => {
+    document.querySelector(".cevap").remove();
+    document.querySelector(".suk").remove();
+  });
+  for(i=0; i<5; i++){
+    var cvp = document.createElement("p");
+    cvp.setAttribute("class", "cevap");
+    var sk = document.createElement("div");
+    sk.setAttribute("class", "suk");
+    document.querySelector(".siklar").appendChild(sk);
+    sk.appendChild(cvp);
+  }
   dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]];
   soru = sorular[Math.floor(Math.random() * sorular.length)];
   document.querySelector("#sorubaslik").innerHTML=soru;
