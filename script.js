@@ -193,29 +193,23 @@ function start(){
     yzlnshtsk = sahtesiklar.indexOf(sorukonumu);
     yzlnshtskkldr = sahtesiklar.splice(yzlnshtsk, .25);
     sorukonumu = sorukonumu+.25;
-    dogrucvpsikki.parentNode.addEventListener("click", () =>{
-      dogrucvpsikki.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(226 18 59 / 20%); opacity: 1;";
-      console.log("yanlış");
+    dogrucvpsikki.parentElement.addEventListener("click", () =>{
+      dogrucvpsikki.parentElement.style="backdrop-filter: blur(100px); background-color: rgb(226 18 59 / 20%); opacity: 1;";
       yanlis(dogrucvpsikki);
   });
   });
   console.log(dogrucvpsikki);
   console.log(dogrucvp);
-  dogrucvp.parentNode.addEventListener("click", ()=>{
+  dogrucvp.parentElement.addEventListener("click", ()=>{
       dogru(dogrucvp);
   });
 }
 function dogru(dogrucvp){
-  dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 20%);opacity: 1";
+  dogrucvp.parentElement.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 20%);opacity: 1";
       console.log("doğru");
       console.log(dogrucvp);
       start();
 }
 function yanlis(dogrucvpsikki){
-      document.querySelector(".world").style.animation="";
-      document.querySelector(".moon").style.animation="";
-      document.querySelector(".greens").style.animation="";
-      document.querySelector("#bottom-green").style.animation="";
-      document.querySelector(".cloud").style.animation="";
-  document.querySelector(".sorualani").style="scale: 0";
+  console.log("yanlış");
 }
