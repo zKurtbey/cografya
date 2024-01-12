@@ -177,6 +177,8 @@ var yzlnshtskkldr;
 var yzlnsrkldr;
   
 function start(){
+  dogrucvpsikki= [""];
+  dogrucdvp = "";
   const suklar = document.querySelectorAll(".suk");
   soru = sorular[Math.floor(Math.random() * sorular.length)];
   document.querySelector("#sorubaslik").innerHTML=soru;
@@ -216,13 +218,8 @@ function kontrol(dogrucvpsikki, dogrucvp){
     dogrucvp.parentNode.addEventListener("click", ()=>{
       dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 20%);opacity: 1";
       console.log("doğru");
-      dogrucvpsikki.forEach((dogrucvpsikki) => {
-        dogrucvpsikki = "";
-        console.log(dogrucvpsikki);
-      });
       console.log(dogrucvpsikki);
       console.log(dogrucvp);
-      dogrucvp = "";
       start();
     });
 }
