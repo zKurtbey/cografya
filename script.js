@@ -175,6 +175,8 @@ var yzlnshtskkldr;
 var yzlnsrkldr;
 var dogrucvp;
 var dogrucvpsikki;
+const correct = new Audio('correct.mp3');
+const wrong = new Audio('wrong.mp3');
 function start(){
   document.querySelectorAll(".cevap").forEach((cevap) => {
     document.querySelector(".cevap").remove();
@@ -207,15 +209,19 @@ function start(){
     sorukonumu = sorukonumu+.25;
     dogrucvpsikki.parentElement.addEventListener("click", ()=>{
       dogrucvpsikki.parentElement.style="background-color: rgb(252 20 20 / 30%)";
+      wrong.play();
   setTimeout(() => {
+    wrong.pause();
       document.querySelector(".sorualani").style="animation: sorualani .5s ease-in-out reverse";
-  }, 400);
+  }, 1000);
     });
   });
   dogrucvp.parentElement.addEventListener("click", ()=>{
+    correct.play();
     dogrucvp.parentElement.style="background-color: rgb(16 243 24 / 30%)";
     setTimeout(() => {
+      correct.pause();
       start();
-    }, 400);
+    }, 1000);
 });
 }
