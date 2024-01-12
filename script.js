@@ -205,6 +205,12 @@ function start(){
     yzlnshtsk = sahtesiklar.indexOf(sorukonumu);
     yzlnshtskkldr = sahtesiklar.splice(yzlnshtsk, .25);
     sorukonumu = sorukonumu+.25;
+    dogrucvpsikki.parentElement.addEventListener("click", ()=>{
+      dogrucvpsikki.parentElement.style="background-color: rgb(252 20 20 / 30%)";
+  setTimeout(() => {
+      document.querySelector(".sorualani").style="animation: sorualani .5s ease-in-out reverse";
+  }, 400);
+    });
   });
   dogrucvp.parentElement.addEventListener("click", ()=>{
     dogrucvp.parentElement.style="background-color: rgb(16 243 24 / 30%)";
@@ -212,10 +218,4 @@ function start(){
       start();
     }, 400);
 });
-}
-function yanlis(dogrucvpsikki){
-  dogrucvpsikki.parentElement.style="background-color: rgb(252 20 20 / 30%)";
-  setTimeout(() => {
-    document.querySelector(".sorualani").style="animation: sorualani .5s ease-in-out reverse";
-  }, 400);
 }
