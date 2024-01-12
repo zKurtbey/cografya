@@ -195,10 +195,6 @@ function start(){
     yzlnshtskkldr = sahtesiklar.splice(yzlnshtsk, .25);
     sorukonumu = sorukonumu+.25;
   });
-  dogrucvpsikki.parentElement.addEventListener("click", () =>{
-      dogrucvpsikki.parentElement.style="backdrop-filter: blur(100px); background-color: rgb(226 18 59 / 20%); opacity: 1";
-      yanlis(dogrucvpsikki);
-  });
   console.log(dogrucvpsikki);
   console.log(dogrucvp);
   dogrucvp.parentElement.addEventListener("click", ()=>{
