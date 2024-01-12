@@ -178,10 +178,6 @@ var yzlnshtskkldr;
 var yzlnsrkldr;
   
 function start(){
-  dogrucvpsikki= [""];
-  dogrucdvp = "";
-  console.log(dogrucvpsikki);
-  console.log(dogrucvp);
   soru = sorular[Math.floor(Math.random() * sorular.length)];
   document.querySelector("#sorubaslik").innerHTML=soru;
   sorukonumu = sorular.indexOf(soru);
@@ -199,6 +195,8 @@ function start(){
     yzlnshtskkldr = sahtesiklar.splice(yzlnshtsk, .25);
     sorukonumu = sorukonumu+.25;
   });
+  console.log(dogrucvpsikki);
+  console.log(dogrucvp);
   kontrol(dogrucvpsikki, dogrucvp);
 }
 function kontrol(dogrucvpsikki, dogrucvp){
