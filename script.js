@@ -174,6 +174,8 @@ var yzlnskkldr;
 var yzlnshtsk;
 var yzlnshtskkldr;
 var yzlnsrkldr;
+var dogrucvp;
+var dogrucvpsikki;
   
 function start(){
   var dogrucvpsikki = [];
@@ -210,7 +212,38 @@ function dogru(dogrucvp){
   dogrucvp.parentElement.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 20%);opacity: 1";
       console.log("doğru");
       console.log(dogrucvp);
-      start();
+      kabul(dogrucvpsikki, dogrucvp);
+}
+function kabul(dogrucvpsikki, dogrucvp) {
+  dogrucvpsikki.splice(0, dogrucvpsikki.length);
+  dogrucvp = null;
+  dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]];
+  soru = sorular[Math.floor(Math.random() * sorular.length)];
+  document.querySelector("#sorubaslik").innerHTML=soru;
+  sorukonumu = sorular.indexOf(soru);
+  yzlnsrkldr = sorular.splice(sorukonumu, 1);
+  dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
+  grckcvpdgr = siklar.splice(sorukonumu, 1);
+  dogrucvp.innerHTML=grckcvpdgr;
+  yzlnsk = dogrucvpsikki.indexOf(dogrucvp);
+  yzlnskkldr = dogrucvpsikki.splice(yzlnsk, 1);
+  sorukonumu = sorukonumu * 4;
+  dogrucvpsikki.forEach((dogrucvpsikki) => {
+    sukdgr = sahtesiklar.splice(sorukonumu, 1);
+    dogrucvpsikki.innerHTML = sukdgr;
+    yzlnshtsk = sahtesiklar.indexOf(sorukonumu);
+    yzlnshtskkldr = sahtesiklar.splice(yzlnshtsk, .25);
+    sorukonumu = sorukonumu+.25;
+    dogrucvpsikki.parentElement.addEventListener("click", () =>{
+      dogrucvpsikki.parentElement.style="backdrop-filter: blur(100px); background-color: rgb(226 18 59 / 20%); opacity: 1;";
+      yanlis(dogrucvpsikki);
+  });
+  });
+  console.log(dogrucvpsikki);
+  console.log(dogrucvp);
+  dogrucvp.parentElement.addEventListener("click", ()=>{
+      dogru(dogrucvp);
+  });
 }
 function yanlis(dogrucvpsikki){
   console.log("yanlış");
