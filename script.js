@@ -12,8 +12,7 @@ ustukapat.addEventListener("click", () =>{
   }
 });
 document.querySelector("#brdr").addEventListener("click", () => {
-  document.querySelector(".sorualani").style="display: flex";
-  document.querySelector(".sorualani").style="animation: sorualani .5s ease-in-out forwards";
+  document.querySelector(".sorualani").style="display: flex; animation: sorualani .5s ease-in-out forwards";
   document.querySelector("#brdr").style="display: none";
   start();
   document.querySelector(".moon").style="animation: uydu 17.5s ease-in-out infinite";
@@ -207,12 +206,16 @@ function start(){
     yzlnshtskkldr = sahtesiklar.splice(yzlnshtsk, .25);
     sorukonumu = sorukonumu+.25;
   });
-  console.log(dogrucvpsikki);
-  console.log(dogrucvp);
   dogrucvp.parentElement.addEventListener("click", ()=>{
+    dogrucvp.parentElement.style="background-color: rgb(16 243 24 / 30%)";
+    setTimeout(() => {
       start();
-  });
+    }, 400);
+});
 }
 function yanlis(dogrucvpsikki){
-  console.log("yanlış");
+  dogrucvpsikki.parentElement.style="background-color: rgb(252 20 20 / 30%)";
+  setTimeout(() => {
+    document.querySelector(".sorualani").style="animation: sorualani .5s ease-in-out reverse";
+  }, 400);
 }
