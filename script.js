@@ -12,6 +12,7 @@ ustukapat.addEventListener("click", () =>{
   }
 });
 document.querySelector("#brdr").addEventListener("click", () => {
+  document.querySelecor(".sorualani").style="display: flex";
   document.querySelector(".sorualani").style="animation: sorualani .5s ease-in-out forwards";
   document.querySelector("#brdr").style="display: none";
   start();
