@@ -15,7 +15,6 @@ document.querySelector(".sorualani").style.display="none";
 document.querySelector("#brdr").addEventListener("click", () => {
   document.querySelector("#brdr").style="display: none";
   document.querySelector(".sorualani").style="display: flex; animation: sorualani 1s ease-in-out forwards";
-  start();
   document.querySelector(".moon").style="animation: uydu 17.5s ease-in-out infinite";
   document.querySelector('.greens').style="animation: greens 12.5s ease-in-out infinite";
   document.querySelector('#bottom-green').style="animation: bottom-green 12.5s ease-in-out infinite";
