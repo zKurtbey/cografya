@@ -208,7 +208,6 @@ function start(){
 function dogru(dogrucvp){
   dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 20%);opacity: 1";
       console.log("doğru");
-      console.log(dogrucvpsikki);
       console.log(dogrucvp);
       start();
 }
