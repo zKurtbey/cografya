@@ -210,8 +210,6 @@ function dogru(dogrucvp, dogrucvpsikki, grckcvpdgr, soru, yzlnsk, yzlnskkldr, su
   dogrucvp.parentElement.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 20%);opacity: 1";
       console.log("doğru");
       console.log(dogrucvp);
-  dogrucvpsikki.splice(0, dogrucvpsikki.length);
-  dogrucvp = null;
   soru = sorular[Math.floor(Math.random() * sorular.length)];
   document.querySelector("#sorubaslik").innerHTML=soru;
   sorukonumu = sorular.indexOf(soru);
