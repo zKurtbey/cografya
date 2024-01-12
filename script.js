@@ -178,8 +178,6 @@ var dogrucvp;
 var dogrucvpsikki;
   
 function start(){
-  var dogrucvpsikki = [];
-  var dogrucvp = [];
   dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]];
   soru = sorular[Math.floor(Math.random() * sorular.length)];
   document.querySelector("#sorubaslik").innerHTML=soru;
@@ -205,16 +203,13 @@ function start(){
   console.log(dogrucvpsikki);
   console.log(dogrucvp);
   dogrucvp.parentElement.addEventListener("click", ()=>{
-      dogru(dogrucvp);
+      dogru(dogrucvp, dogrucvpsikki, grckcvpdgr, soru, yzlnsk, yzlnskkldr, sukdgr, sorukonumu);
   });
 }
-function dogru(dogrucvp){
+function dogru(dogrucvp, dogrucvpsikki, grckcvpdgr, soru, yzlnsk, yzlnskkldr, sukdgr, sorukonumu){
   dogrucvp.parentElement.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 20%);opacity: 1";
       console.log("doğru");
       console.log(dogrucvp);
-      kabul(dogrucvpsikki, dogrucvp);
-}
-function kabul(dogrucvpsikki, dogrucvp) {
   dogrucvpsikki.splice(0, dogrucvpsikki.length);
   dogrucvp = null;
   soru = sorular[Math.floor(Math.random() * sorular.length)];
