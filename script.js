@@ -171,18 +171,17 @@ var sahtesiklar = [
   var soru;
 var yzlnsk; 
 var yzlnskkldr;
-var dogrucvp;
-var dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]];
 var yzlnshtsk;
 var yzlnshtskkldr;
 var yzlnsrkldr;
   
 function start(){
+  var dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]];
   soru = sorular[Math.floor(Math.random() * sorular.length)];
   document.querySelector("#sorubaslik").innerHTML=soru;
   sorukonumu = sorular.indexOf(soru);
   yzlnsrkldr = sorular.splice(sorukonumu, 1);
-  dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
+  var dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
   grckcvpdgr = siklar.splice(sorukonumu, 1);
   dogrucvp.innerHTML=grckcvpdgr;
   yzlnsk = dogrucvpsikki.indexOf(dogrucvp);
@@ -194,28 +193,25 @@ function start(){
     yzlnshtsk = sahtesiklar.indexOf(sorukonumu);
     yzlnshtskkldr = sahtesiklar.splice(yzlnshtsk, .25);
     sorukonumu = sorukonumu+.25;
+    dogrucvpsikki.parentNode.addEventListener("click", () =>{
+      dogrucvpsikki.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(226 18 59 / 20%); opacity: 1;";
+      console.log("yanlış");
+      yanlis(dogrucvpsikki);
+  });
   });
   console.log(dogrucvpsikki);
   console.log(dogrucvp);
   kontrol(dogrucvpsikki, dogrucvp);
+  dogrucvp.parentNode.addEventListener("click", ()=>{
+      dogru(dogrucvp);
+  });
 }
-function kontrol(dogrucvpsikki, dogrucvp){
-  console.log(dogrucvpsikki);
-  console.log(dogrucvp);
-    dogrucvp.parentNode.addEventListener("click", ()=>{
-      dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 20%);opacity: 1";
+function dogru(){
+  dogrucvp.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(3 205 10 / 20%);opacity: 1";
       console.log("doğru");
       console.log(dogrucvpsikki);
       console.log(dogrucvp);
       start();
-    });
-  dogrucvpsikki.forEach((dogrucvpsikki) =>{
-    dogrucvpsikki.parentNode.addEventListener("click", () =>{
-      dogrucvpsikki.parentNode.style="backdrop-filter: blur(100px); background-color: rgb(226 18 59 / 20%); opacity: 1;";
-      console.log("yanlış");
-      yanlis();
-    });
-  });
 }
 function yanlis(){
       document.querySelector(".world").style.animation="";
