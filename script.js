@@ -202,6 +202,32 @@ function start(){
     console.log(dogrucvpsikki);
   });
 }
+function dogru(){
+  dogrucvpsikki= [""];
+  dogrucdvp = "";
+  const suklar = document.querySelectorAll(".suk");
+  soru = sorular[Math.floor(Math.random() * sorular.length)];
+  document.querySelector("#sorubaslik").innerHTML=soru;
+  sorukonumu = sorular.indexOf(soru);
+  yzlnsrkldr = sorular.splice(sorukonumu, 1);
+  console.log(sorukonumu);
+  dogrucvpsikki = [document.querySelectorAll(".cevap")[0], document.querySelectorAll(".cevap")[1], document.querySelectorAll(".cevap")[2], document.querySelectorAll(".cevap")[3], document.querySelectorAll(".cevap")[4]]; 
+  dogrucvp = dogrucvpsikki[Math.floor(Math.random() * dogrucvpsikki.length)];
+  grckcvpdgr = siklar.splice(sorukonumu, 1);
+  dogrucvp.innerHTML=grckcvpdgr;
+  skkldr(yzlnsk, yzlnskkldr);
+  sorukonumu = sorukonumu * 4;
+  console.log(sorukonumu);
+  dogrucvpsikki.forEach((dogrucvpsikki) => {
+    sukdgr = sahtesiklar.splice(sorukonumu, 1);
+    dogrucvpsikki.innerHTML = sukdgr;
+    yzlnshtsk = sahtesiklar.indexOf(sorukonumu);
+    yzlnshtskkldr = sahtesiklar.splice(yzlnshtsk, .25);
+    sorukonumu = sorukonumu+.25;
+    console.log(sorukonumu);
+    console.log(dogrucvpsikki);
+  });
+}
 function skkldr(yzlnsk, yzlnskkldr){ 
   yzlnsk = dogrucvpsikki.indexOf(dogrucvp);
   yzlnskkldr = dogrucvpsikki.splice(yzlnsk, 1);
@@ -220,7 +246,7 @@ function kontrol(dogrucvpsikki, dogrucvp){
       console.log("doğru");
       console.log(dogrucvpsikki);
       console.log(dogrucvp);
-      start();
+      dogru();
     });
 }
 function yanlis(){
