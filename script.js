@@ -253,7 +253,6 @@ var sahtesiklar = [
 "Täschhorn", "Nordend", "Lyskamm", "Dom",
 "Liffey", "Shannon", "Erne", "Lee",
 "Tambora", "Kerinci", "Jaya", "Rantemario",
-  "İstanbul", "İzmir", "Antalya", "Bursa",
   "Erciyes", "Cilo", "Süphan", "Davraz",
   "Sakarya", "Fırat", "Meriç", "Yeşilırmak",
   "Ankara", "İzmir", "Bursa", "Adana",
