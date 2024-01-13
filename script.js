@@ -211,12 +211,12 @@ function start(){
       dogrucvpsikki.parentElement.style="background-color: rgb(252 20 20 / 30%)";
       wrong.currentTime = 0; 
       wrong.play();
-      document.querySelector(".sorualani").style="animation: sorualanikapat .5s ease-in-out forwards; display: flex";
+      document.querySelector(".sorualani").style="animation: sorualanikapat 1s ease-in-out forwards; display: flex";
   setTimeout(() => {
     wrong.pause();
     document.querySelector(".sorualani").style="display: none";
   document.querySelector("#brdr").style="display: flex";
-  }, 1500);
+  }, 1000);
     });
   });
   dogrucvp.parentElement.addEventListener("click", ()=>{
