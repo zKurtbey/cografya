@@ -628,8 +628,13 @@ body{
   }
 @keyframes sorualani{
   0%{scale: 0}
-  80%{scale: 1.1}
+  20%{scale: 1.1}
   100%{scale: 1}
+}
+@keyframes sorualanikapat{
+  0%{scale: 1}
+  80%{scale: 1.1}
+  100%{scale: 0}
 }
 .soru{
   align-items: center;
