@@ -378,6 +378,7 @@ body{
   left: 0;
   box-shadow: rgb(56 38 88) 0px 0px 15px;
   transition: all .5s;
+  z-index: 5;
 }
 #earth{
   font-size: 15px;
@@ -624,7 +625,7 @@ body{
   border-radius: 1.25em;
   scale: 1;
   transition: all .25s ease-in-out;
-  z-index: 2;
+  z-index: 6;
   }
 @keyframes sorualani{
   0%{scale: 0}
