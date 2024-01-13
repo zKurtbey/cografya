@@ -628,12 +628,12 @@ body{
   }
 @keyframes sorualani{
   0%{scale: 0}
-  20%{scale: 1.1}
+  80%{scale: 1.1}
   100%{scale: 1}
 }
 @keyframes sorualanikapat{
   0%{scale: 1}
-  80%{scale: 1.1}
+  50%{scale: 1.1}
   100%{scale: 0}
 }
 .soru{
