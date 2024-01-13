@@ -430,6 +430,7 @@ body{
   border-radius: 10px;
   transition: all .8s ease-in-out;
   cursor: pointer;
+  z-index: 6;
 }
   @keyframes ust{
     to{top: -8em; display: none}
