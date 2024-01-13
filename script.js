@@ -215,6 +215,7 @@ function start(){
   setTimeout(() => {
     wrong.pause();
     document.querySelector(".sorualani").style="display: none";
+  document.querySelector("#brdr").style="display: flex";
   }, 1000);
     });
   });
