@@ -209,11 +209,12 @@ function start(){
     sorukonumu = sorukonumu+.25;
     dogrucvpsikki.parentElement.addEventListener("click", ()=>{
       dogrucvpsikki.parentElement.style="background-color: rgb(252 20 20 / 30%)";
-      wrong.currentTime = 0;
+      wrong.currentTime = 0; 
       wrong.play();
+      document.querySelector(".sorualani").style="animation: sorualanikapat .5s ease-in-out forwards; display: flex";
   setTimeout(() => {
     wrong.pause();
-      document.querySelector(".sorualani").style="animation: sorualani .5s ease-in-out reverse";
+    document.querySelector(".sorualani").style="display: none";
   }, 1000);
     });
   });
