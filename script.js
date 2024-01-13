@@ -216,7 +216,7 @@ function start(){
     wrong.pause();
     document.querySelector(".sorualani").style="display: none";
   document.querySelector("#brdr").style="display: flex";
-  }, 1000);
+  }, 1500);
     });
   });
   dogrucvp.parentElement.addEventListener("click", ()=>{
