@@ -4,7 +4,7 @@ html{
   overflow: hidden;
 }
 
-@media(max-height: 700px){
+@media(max-width: 1023px){
 body{
   display: flex;
   margin: 0;
@@ -355,7 +355,7 @@ body{
 
 
 
-@media(min-height: 701px){
+@media(min-width: 1024px){
 body{
   display: flex;
   margin: 0;
