@@ -331,11 +331,7 @@ body{
   align-items: center;
   backdrop-filter: blur(15px);
   box-shadow: rgb(233 233 233 / 30%) 0 0 7.5px,
-    rgb(242 242 238 / 30%) 0 -10px 15px inset;
-}
-@keyframes skac{
-  to{box-shadow: rgba(239, 254, 10, .3) 0 0 7.5px,
-    rgb(230 230 250 / 20%) 0 10px 15px inset}
+    rgb(242 242 238 / 30%) 0 -5px 5px inset;
 }
 .cevap{
   font-family: system-ui, helvetica;
@@ -702,11 +698,7 @@ body{
   align-items: center;
   backdrop-filter: blur(15px);
   box-shadow: rgb(233 233 233 / 30%) 0 0 7.5px,
-    rgb(242 242 238 / 30%) 0 -10px 15px inset;
-}
-@keyframes skac{
-  to{box-shadow: rgba(239, 254, 10, .3) 0 0 7.5px,
-    rgb(230 230 250 / 50%) 0 10px 15px inset}
+    rgb(242 242 238 / 30%) 0 -5px 5px inset;
 }
 .cevap{
   font-family: system-ui, helvetica;
