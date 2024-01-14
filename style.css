@@ -76,7 +76,6 @@ body{
   position: absolute;
   right: 3em;
   border-radius: 20px;
-  transition: all .20s ease-in-out;
   cursor: pointer;
   top: 3.25em;
 }
