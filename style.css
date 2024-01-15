@@ -16,7 +16,7 @@ body{
 }
 .ust{
   background-color: rgb(56 38 88);
-  height: 12em;
+  height: 8em;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -29,19 +29,21 @@ body{
   transition: all .5s;
 }
 #earth{
-  font-size: 22.5px;
-  height: 120px;
+  font-size: 12.5px;
+  height: 60px;
   position: absolute;
-  left: 1.5em;
+  left: 1em;
   filter: drop-shadow(0px 0px 10px #6e6db3);
+  margin-right: 1em;
 }
 #siteadi{
   color: rgb(240, 232, 255);
   font-family: helvetica;
   position: absolute;
-  margin-left: 5em;
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 17.5px;
+  width: 40%;
+  right: calc(65% - 5em);
 }
 .digeryarismalar{
   display: flex;
@@ -49,7 +51,7 @@ body{
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: 8.5em;
+  right: 4.5em;
   width: 75px;
   height: 75px;
   border-radius: 20px;
@@ -60,33 +62,33 @@ body{
   background-color: #34425c9c;
 }
 #code{
-  height: 60px;
+  height: 35px;
   color: rgb(240, 232, 255);
 }
 #top-alignment{
-  height: 52.5px;
+  height: 35px;
 }
 .ustukapat{
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
-  width: 67.75px;
-  height: 67.75px;
+  width: 45px;
+  height: 45px;
   position: absolute;
-  right: 3em;
+  right: 1.5em;
   border-radius: 20px;
   cursor: pointer;
-  top: 4em;
+  top: 2em;
 }
 .ustukapat:hover{
   background-color: #34425c9c;
 }
   @keyframes ust{
-    to{top: -12em; display: none}
+    to{top: -8em; display: none}
   }
   @keyframes ust-rvr{
-    from{top: -12em; display: none;}
+    from{top: -8em; display: none;}
     to{top: 0; display: flex}
   }
   @keyframes ustukapat{
@@ -99,34 +101,30 @@ body{
 /*sun*/
 .sun{
   position: absolute;
-  height: 40em;
-  width: 40em;
+  height: 25em;
+  width: 25em;
   background-image: linear-gradient(45deg,#916a2eeb, #978f23eb,#afa526eb,#a39b34eb,#a39b34eb, #ffb307);
   border-radius: 50%;
   box-shadow: 0px 0px 25px rgb(253 168 13 / 96%);
-  left: -10em;
-  bottom: 0em;
+  left: calc(-15em + 5%) ;
+  bottom: 0;
   z-index: 3;
   overflow: hidden;
-}
-/*mercure*/
-.mercure{
-  display: none;
 }
 /*moon*/
 .moon{
   position: absolute;
-  width: 7.5em;
-  height: 7.5em;
+  width: 5em;
+  height: 5em;
   border-radius: 50%;
   background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22);
-  bottom: 24em;
-  right: 24em;
+  bottom: 17em;
+  right: 13.5em;
   z-index: 1;
   box-shadow: 0 0 15px #444648;
 }
 @keyframes uydu{
-  0%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 24em; right: 24em; z-index: 1;}
+  0%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 17em; right: 13.5em; z-index: 1;}
   10%{background-image: linear-gradient(100deg, #d6d2d2, #d2d2d8, #3b3c3d);}
   14%{background-image: linear-gradient(100deg, #bdbaba, #bbbbc1, #4e4f50);}
   18%{background-image: linear-gradient(100deg, #a19d9d, #a0a0a5, #636567);}
@@ -142,15 +140,15 @@ body{
   82%{background-image: linear-gradient(100deg, #a19d9d, #a0a0a5, #636567);}
   86%{background-image: linear-gradient(100deg, #bdbaba, #bbbbc1, #4e4f50);}
   90%{background-image: linear-gradient(100deg, #d6d2d2, #d2d2d8, #3b3c3d);}
-  100%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 24em; right: 24em; z-index: 0;}
+  100%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 17em; right: 13.5em; z-index: 0;}
 }
 /*world*/
 .world{
   position: absolute;
-  width: 25em;
-  height: 25em;
-  right: 2em;
-  bottom: 5em;
+  width: 15em;
+  height: 15em;
+  right: .5em;
+  bottom: 4em;
   background-image: linear-gradient(75deg, #1466ad, #21272d);
   border-radius: 50%;
   box-shadow: -5px 5px 2em #3175b1cf,
@@ -159,19 +157,19 @@ body{
 }
 .greens{
   position: absolute;
-  width: 15em;
-  height: 15em;
+  width: 10em;
+  height: 10em;
   background-image: linear-gradient(100deg, #01ff40, #1d5134);
   transform: rotate(-45deg);
   right: 7.5em;
-  bottom: 12.5em;
+  bottom: 10em;
   border-bottom-left-radius: 90%;
   border-bottom-right-radius: 30%;
 }
 .cloud{
   position: absolute;
-  width: 20em;
-  height: 12.5em;
+  width: 15em;
+  height: 7.5em;
   background-image: linear-gradient(45deg, #f8f7f7f5, #6f7c88bf);
   right: 7.5em;
   bottom: 2.5em;
@@ -199,14 +197,14 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10.5em;
-  width: 20.5em;
+  height: 7.5em;
+  width: 15.5em;
   background-image: linear-gradient(45deg, rgb(250 205 5), rgb(108 113 35), rgb(15 18 33));
   border-radius: 10px;
   box-shadow: 0 0 15px rgb(24 23 26 / 50%);
   transition: all .35s ease-in-out;
   cursor: pointer;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -214,19 +212,20 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10.5em;
-  width: 20.5em;
+  height: 7.5em;
+  width: 15.5em;
   opacity: .75;
   border-radius: 30px;
   box-shadow: 0 0 15px rgb(232 229 237 / 50%);
 }
 #oyna{
+  position: absolute;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: 10em;
-  width: 20em;
+  height: 8em;
+  width: 16em;
   background-image: linear-gradient(45deg, #1b1f3161, #14165578);
   border-radius: 10px;
   backdrop-filter: blur(20px);
@@ -238,8 +237,8 @@ body{
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: 10em;
-  width: 20em;
+  height: 8em;
+  width: 16em;
   background-image: linear-gradient(45deg, #1b1f3161, #14165578);
   border-radius: 30px;
   backdrop-filter: blur(50px);
@@ -250,6 +249,7 @@ body{
   color: antiquewhite;
   opacity: .8;
   text-shadow: 0 0 10px rgb(25 26 26 / 50%);
+  font-size: 20px;
 }
 .sorualani{
   display: none;
@@ -257,8 +257,8 @@ body{
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 35em;
-  height: 50em;
+  width: 20em;
+  height: 30em;
   background-color: rgb(0 0 48 / 25%);
   backdrop-filter: blur(50px);
   border-radius: 1.25em;
@@ -266,7 +266,7 @@ body{
   transition: all .25s ease-in-out;
   z-index: 2;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   }
@@ -281,9 +281,9 @@ body{
   text-align: center;
   display: flex;
   position: relative;
-  height: 22.75em;
-  width: 35em;
-  border-radius: 1,53em;
+  height: 10.75em;
+  width: 17.75em;
+  border-radius: 1.5em;
   backdrop-filter: blur(15px);
   box-shadow: rgba(0, 0, 0, .3) 0 0 25px;
   transition: all .25s ease-in-out;
@@ -299,23 +299,24 @@ body{
   box-shadow: rgb(240 56 56 / 30%) 0 0 25px;
 }
 #sorubaslik{
-  font-size: 20px;
+  font-size: 15px;
   font-family: system-ui, helvetica;
   color: rgb(240, 232, 255);
   font-weight: bold;
   margin: 0 .5em 0 .5em;
 }
 .siklar{
-  margin-top: .5em;
+  margin-top: 1em;
   display: grid;
-  grid-template-rows: 7.5em 7.5em 7.5em 7.5em 7.5em;
+  grid-template-rows: 2.5em 2.5em 2.5em 2.5em 2.5em;
+  grid-row-gap: 1em;
   align-items: center;
   justify-content: center;
 }
 .suk{
-  height: 5em;
-  width: 30em;
-  border-radius: 1.5em;
+  height: 2.75em;
+  width: 17.75em;
+  border-radius: .75em;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -339,7 +340,7 @@ body{
 .cevap{
   font-family: system-ui, helvetica;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 12.5px;
   color: transparent;
   transition: all .35s ease;
   color: rgb(240 232 255 / 80%);
