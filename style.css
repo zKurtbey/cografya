@@ -79,24 +79,24 @@ body{
   right: 1.5em;
   border-radius: 20px;
   cursor: pointer;
-  top:  2em;
+  top:  1.75em;
 }
 .ustukapat:hover{
   background-color: #34425c9c;
 }
   @keyframes ust{
-    to{top: -8em; display: none}
+    to{top: -6em; display: none}
   }
   @keyframes ust-rvr{
-    from{top: -8em; display: none;}
+    from{top: -6em; display: none;}
     to{top: 0; display: flex}
   }
   @keyframes ustukapat{
-    to{background-color: rgb(106 88 138 / 30%); backdrop-filter: blur(100px); transform: rotate(180deg); border-radius: 10px;}
+    to{background-color: rgb(106 88 138 / 30%); backdrop-filter: blur(100px); transform: rotate(180deg); border-radius: 20px;}
   }
   @keyframes ustukapat-rvr{
-    from{background-color: rgb(106 88 138 / 30%); backdrop-filter: blur(100px); transform: rotate(180deg); border-radius: 10px;}
-    to{background-color: rgb(56 38 88); transform: rotate(360deg); border-radius: 20px;}
+    from{background-color: rgb(106 88 138 / 30%); backdrop-filter: blur(100px); transform: rotate(180deg); border-radius: 20px;}
+    to{background-color: rgb(56 38 88); transform: rotate(360deg); border-radius: 10px;}
   }
 /*sun*/
 .sun{
@@ -124,7 +124,7 @@ body{
   box-shadow: 0 0 15px #444648;
 }
 @keyframes uydu{
-  0%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 17em; right: 13.5em; z-index: 1;}
+  0%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 12em; right: 10em; z-index: 1;}
   10%{background-image: linear-gradient(100deg, #d6d2d2, #d2d2d8, #3b3c3d);}
   14%{background-image: linear-gradient(100deg, #bdbaba, #bbbbc1, #4e4f50);}
   18%{background-image: linear-gradient(100deg, #a19d9d, #a0a0a5, #636567);}
@@ -140,7 +140,7 @@ body{
   82%{background-image: linear-gradient(100deg, #a19d9d, #a0a0a5, #636567);}
   86%{background-image: linear-gradient(100deg, #bdbaba, #bbbbc1, #4e4f50);}
   90%{background-image: linear-gradient(100deg, #d6d2d2, #d2d2d8, #3b3c3d);}
-  100%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 17em; right: 13.5em; z-index: 0;}
+  100%{background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22); bottom: 12em; right: 10em; z-index: 0;}
 }
 /*world*/
 .world{
@@ -259,14 +259,14 @@ body{
   text-align: center;
   width: 20em;
   height: 30em;
-  background-color: rgb(0 0 48 / 25%);
+  background-color: rgb(0 0 48 / 60%);
   backdrop-filter: blur(50px);
   border-radius: 1.25em;
   scale: 1;
   transition: all .25s ease-in-out;
   z-index: 2;
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   }
