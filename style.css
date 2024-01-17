@@ -16,7 +16,7 @@ body{
 }
 .ust{
   background-color: rgb(56 38 88);
-  height: 8em;
+  height: 6em;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -79,7 +79,7 @@ body{
   right: 1.5em;
   border-radius: 20px;
   cursor: pointer;
-  top: 2em;
+  top:  2em;
 }
 .ustukapat:hover{
   background-color: #34425c9c;
@@ -101,12 +101,12 @@ body{
 /*sun*/
 .sun{
   position: absolute;
-  height: 25em;
-  width: 25em;
+  height: 20em;
+  width: 20em;
   background-image: linear-gradient(45deg,#916a2eeb, #978f23eb,#afa526eb,#a39b34eb,#a39b34eb, #ffb307);
   border-radius: 50%;
   box-shadow: 0px 0px 25px rgb(253 168 13 / 96%);
-  left: calc(-15em + 5%) ;
+  left: calc(-12.5em + 5%);
   bottom: 0;
   z-index: 3;
   overflow: hidden;
@@ -114,12 +114,12 @@ body{
 /*moon*/
 .moon{
   position: absolute;
-  width: 5em;
-  height: 5em;
+  width: 4.5em;
+  height: 4.5em;
   border-radius: 50%;
   background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22);
-  bottom: 17em;
-  right: 13.5em;
+  bottom: 12em;
+  right: 10em;
   z-index: 1;
   box-shadow: 0 0 15px #444648;
 }
@@ -145,10 +145,10 @@ body{
 /*world*/
 .world{
   position: absolute;
-  width: 15em;
-  height: 15em;
+  width: 12.5em;
+  height: 12.5em;
   right: .5em;
-  bottom: 4em;
+  bottom: 1em;
   background-image: linear-gradient(75deg, #1466ad, #21272d);
   border-radius: 50%;
   box-shadow: -5px 5px 2em #3175b1cf,
@@ -157,18 +157,18 @@ body{
 }
 .greens{
   position: absolute;
-  width: 10em;
-  height: 10em;
+  width: 7.5em;
+  height: 7.5em;
   background-image: linear-gradient(100deg, #01ff40, #1d5134);
   transform: rotate(-45deg);
   right: 7.5em;
-  bottom: 10em;
+  bottom: 7.5em;
   border-bottom-left-radius: 90%;
   border-bottom-right-radius: 30%;
 }
 .cloud{
   position: absolute;
-  width: 15em;
+  width: 12.5em;
   height: 7.5em;
   background-image: linear-gradient(45deg, #f8f7f7f5, #6f7c88bf);
   right: 7.5em;
