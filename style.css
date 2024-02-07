@@ -76,10 +76,10 @@ body{
   width: 45px;
   height: 45px;
   position: absolute;
-  right: 1.5em;
+  right: 1.5rem;
   border-radius: 20px;
   cursor: pointer;
-  top:  1.75em;
+  top:  1.75rem;
 }
 .ustukapat:hover{
   background-color: #34425c9c;
