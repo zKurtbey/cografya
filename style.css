@@ -425,8 +425,8 @@ body{
   width: 45px;
   height: 45px;
   position: absolute;
-  top: 2em;
-  right: 2em;
+  top: 1rem;
+  right: 1rem;
   border-radius: 10px;
   transition: all .8s ease-in-out;
   cursor: pointer;
@@ -440,11 +440,12 @@ body{
     to{top: 0; display: flex}
   }
   @keyframes ustukapat{
-    to{background-color: rgb(106 88 138 / 30%); backdrop-filter: blur(100px); transform: rotate(180deg); top: .75em; right: .75em; width: 70px; height: 70px; border-radius: 50%;}
+    from{background-color: rgb(56 38 88); transform: rotate(360deg); top: 2.5rem; right: 2.5rem; width: 45px; height: 45px; border-radius: 10px;}
+  to{background-color: rgb(106 88 138 / 30%); backdrop-filter: blur(100px); top: 1rem; right: 1rem; transform: rotate(180deg); width: 70px; height: 70px; border-radius: 50%;}
   }
   @keyframes ustukapat-rvr{
-    from{background-color: rgb(106 88 138 / 30%); backdrop-filter: blur(100px); transform: rotate(180deg); top: .75em; right: .75em; width: 70px; height: 70px; border-radius: 50%;}
-    to{background-color: rgb(56 38 88); transform: rotate(360deg); top: 2em; right: 2em; width: 45px; height: 45px; border-radius: 10px;}
+    from{background-color: rgb(106 88 138 / 30%); backdrop-filter: blur(100px); top: 1rem; right: 1rem; transform: rotate(180deg); width: 70px; height: 70px; border-radius: 50%;}
+    to{background-color: rgb(56 38 88); transform: rotate(360deg); top: 2.5rem; right: 2.5rem; width: 45px; height: 45px; border-radius: 10px;}
   }
 /*sun*/
 .sun{
