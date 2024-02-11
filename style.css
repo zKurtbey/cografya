@@ -4,23 +4,21 @@ html{
   overflow: hidden;
 }
 
+
 #instalink{
   position: absolute;
-  top: 1rem;
-  right: calc(1% + 1svw);
-  width: calc(2% + 1svw);
+  right: calc(5% + 12svw);
+  width: calc(2% + 2svw);
 }
 #tiktoklink{
   position: absolute;
-  top: 1rem;
-  right: calc(4% + 2svw);
-  width: calc(2% + 1svw);
-  opacity: .9;
+  right: calc(10% + 12svw);
+  width: calc(2% + 2svw);
+  opacity: .8;
 }
 #youtubelink{
   position: absolute;
-  top: 1rem;
-  right: calc(8% + 2svw);
+  right: calc(20% + 6.75svw);
   opacity: .9;
 }
 @media(max-width: 1023px){
