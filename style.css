@@ -4,6 +4,25 @@ html{
   overflow: hidden;
 }
 
+#instalink{
+  position: absolute;
+  top: 1rem;
+  right: calc(1% + 1svw);
+  width: calc(2% + 1svw);
+}
+#tiktoklink{
+  position: absolute;
+  top: 1rem;
+  right: calc(4% + 2svw);
+  width: calc(2% + 1svw);
+  opacity: .9;
+}
+#youtubelink{
+  position: absolute;
+  top: 1rem;
+  right: calc(8% + 2svw);
+  opacity: .9;
+}
 @media(max-width: 1023px){
 body{
   display: flex;
