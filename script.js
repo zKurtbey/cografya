@@ -6,9 +6,11 @@ ustukapat.addEventListener("click", () =>{
   if(click % 2 === 0){
     ustukapat.style="animation: ustukapat-rvr 1s forwards";
     ust.style= "animation: ust-rvr .5s forwards";
-    } else{
-  ust.style="animation: ust .5s forwards";
-  ustukapat.style="animation: ustukapat 1s forwards";
+    document.querySelector(".sorualani").style.marginTop="0";
+  } else{
+    ust.style="animation: ust .5s forwards";
+    ustukapat.style="animation: ustukapat 1s forwards";
+    document.querySelector(".sorualani").style.marginTop="7.5svw";
   }
 });
 document.querySelector("#brdr").addEventListener("click", () => {

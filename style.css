@@ -385,7 +385,7 @@ body{
 }
 .ust{
   background-color: rgb(56 38 88);
-  height: 8em;
+  height: 16svh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -418,7 +418,6 @@ body{
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 2.5rem;
   right: 7.5em;
   width: 50px;
   height: 50px;
@@ -444,7 +443,7 @@ body{
   width: 45px;
   height: 45px;
   position: absolute;
-  top: 2.5rem;
+  top: 4.25svh;
   right: 2.5rem;
   border-radius: 10px;
   transition: all .8s ease-in-out;
@@ -452,29 +451,29 @@ body{
   z-index: 6;
 }
   @keyframes ust{
-    to{top: -8em; display: none}
+    to{top: -16svh; display: none}
   }
   @keyframes ust-rvr{
-    from{top: -8em; display: none;}
+    from{top: -16svh; display: none;}
     to{top: 0; display: flex}
   }
   @keyframes ustukapat{
-    from{background-color: rgb(56 38 88); transform: rotate(360deg); top: 2.5rem; right: 2.5rem; width: 45px; height: 45px; border-radius: 10px;}
+    from{background-color: rgb(56 38 88); transform: rotate(360deg); top: 4.25svh; right: 2.5rem; width: 45px; height: 45px; border-radius: 10px;}
   to{background-color: rgb(106 88 138 / 30%); backdrop-filter: blur(100px); top: 1rem; right: 1rem; transform: rotate(180deg); width: 70px; height: 70px; border-radius: 50%;}
   }
   @keyframes ustukapat-rvr{
     from{background-color: rgb(106 88 138 / 30%); backdrop-filter: blur(100px); top: 1rem; right: 1rem; transform: rotate(180deg); width: 70px; height: 70px; border-radius: 50%;}
-    to{background-color: rgb(56 38 88); transform: rotate(360deg); top: 2.5rem; right: 2.5rem; width: 45px; height: 45px; border-radius: 10px;}
+    to{background-color: rgb(56 38 88); transform: rotate(360deg); top: 4.25svh; right: 2.5rem; width: 45px; height: 45px; border-radius: 10px;}
   }
 /*sun*/
 .sun{
   position: absolute;
-  height: 50em;
-  width: 50em;
+  height: 40svw;
+  width: 40svw;
   background-image: linear-gradient(45deg,#916a2eeb, #978f23eb,#afa526eb,#a39b34eb,#a39b34eb, #ffb307);
   border-radius: 50%;
   box-shadow: 0px 0px 25px rgb(253 168 13 / 96%);
-  left: -20em;
+  left: -20svw;
   bottom: 0em;
   z-index: 3;
   overflow: hidden;
@@ -482,26 +481,26 @@ body{
 /*moon*/
 .moon{
   position: absolute;
-  width: 10em;
-  height: 10em;
+  width: 10svw;
+  height: 10svw;
   border-radius: 50%;
   background-image: linear-gradient(100deg, #ffffff, #ffffff, #1b1f22);
-  bottom: 30em;
-  right: 35em;
+  bottom: 25svw;
+  right: 30svw;
   z-index: 1;
   box-shadow: 0 0 15px #444648;
   animation-delay: .25s;
 }
 @keyframes uydu{
-  0%{bottom: 30em; right: 35em; z-index: 1;}
+  0%{bottom: 25svw; right: 30svw; z-index: 1;}
   50%{bottom: 0em; right: 0; display: none;}
-  100%{bottom: 30em; right: 35em; z-index: 0;}
+  100%{bottom: 25svw; right: 30svw; z-index: 0;}
 }
 /*world*/
 .world{
   position: absolute;
-  width: 35em;
-  height: 35em;
+  width: 30svw;
+  height: 30svw;
   right: 0em;
   bottom: 5em;
   background-image: linear-gradient(75deg, #1466ad, #21272d);
@@ -512,12 +511,12 @@ body{
 }
 .greens{
   position: absolute;
-  width: 25em;
-  height: 25em;
+  width: 20svw;
+  height: 20svw;
   background-image: linear-gradient(100deg, #01ff40, #1d5134);
   transform: rotate(-45deg);
-  right: 26em;
-  bottom: 25em;
+  right: 26svw;
+  bottom: 25svw;
   border-bottom-left-radius: 90%;
   border-bottom-right-radius: 30%;
   border-top-left-radius: 90%;
@@ -525,20 +524,20 @@ body{
   box-shadow: 0 0 10px #0b0b0b5c;
 }
   @keyframes greens{
-    0%{right: 26em; bottom: 25em;}
-    40%{right: -10em; bottom: -25em; width: 17.5em; height: 20em; opacity: .5; box-shadow: 0 0 20px #000000;}
-    65%{right: 67.5em; bottom: 50em; box-shadow: 0 0 20px #000000f0;}
+    0%{right: 26svw; bottom: 25svw;}
+    40%{right: -10svw; bottom: -25svw; width: 17.5svw; height: 20svw; opacity: .5; box-shadow: 0 0 20px #000000;}
+    65%{right: 67.5svw; bottom: 50svw; box-shadow: 0 0 20px #000000f0;}
     70%{z-index: -1;}
     95%{z-index: 0;}
-    100%{right: 26em; bottom: 25em;}
+    100%{right: 26svw; bottom: 25svw;}
   }
 .cloud{
   position: absolute;
-  width: 30em;
-  height: 17.5em;
+  width: 30svw;
+  height: 17.5svw;
   background-image: linear-gradient(45deg, #f8f7f7f5, #6f7c88bf);
-  right: 10em;
-  bottom: 5em;
+  right: 10svw;
+  bottom: 5svw;
   border-top-right-radius: 20%;
   border-bottom-right-radius: 50%;
   border-top-left-radius: 30%;
@@ -547,31 +546,31 @@ body{
   box-shadow: 0 0 20px #20232673;
 }
   @keyframes cloud{
-    0%{right: 10em; bottom: 5em; border-top-right-radius: 40%; transform: rotate(-20deg);}
-    40%{right: -25em; bottom: 25em; border-bottom-left-radius: 50%; border-top-right-radius: 10%; border-bottom-left-radius: 70%; width: 0em; height: 10em; opacity: .5; box-shadow: 0 0 20px #000000;}
-    65%{right: 70em; bottom: 0em; box-shadow: 0 0 20px #000000f0;}
+    0%{right: 10svw; bottom: 5svw; border-top-right-radius: 40%; transform: rotate(-20deg);}
+    40%{right: -25svw; bottom: 25svw; border-bottom-left-radius: 50%; border-top-right-radius: 10%; border-bottom-left-radius: 70%; width: 0em; height: 10em; opacity: .5; box-shadow: 0 0 20px #000000;}
+    65%{right: 70svw; bottom: 0; box-shadow: 0 0 20px #000000f0;}
     70%{z-index: -1;}
     95%{z-index: 0;}
-    100%{right: 10em; bottom: 5em; border-top-right-radius: 40%; transform: rotate(-20deg);}
+    100%{right: 10svw; bottom: 5svw; border-top-right-radius: 40%; transform: rotate(-20deg);}
   }
 #bottom-green{
   border-top-left-radius: 20%;
   border-top-right-radius: 50%;
-  bottom: -2.5em;
+  bottom: -2.5svw;
   right: 0;
 }
   @keyframes bottom-green{
-    0%{right: 0em; bottom: -2.5em;}
-    40%{right: -25em; bottom: -65em; width: 17.5em; height: 20em; opacity: .5; box-shadow: 0 0 20px #000000;}
-    65%{right: 45em; bottom: 55em; box-shadow: 0 0 20px #000000f0;}
+    0%{right: 0; bottom: -2.5svw;}
+    40%{right: -25svw; bottom: -65svw; width: 17.5svw; height: 20svw; opacity: .5; box-shadow: 0 0 20px #000000;}
+    65%{right: 45svw; bottom: 55svw; box-shadow: 0 0 20px #000000f0;}
     70%{z-index: -1;}
     95%{z-index: 0;}
-    100%{right: 0em; bottom: -2.5em; transform: rotate(-45deg);}
+    100%{right: 0; bottom: -2.5svw; transform: rotate(-45deg);}
   }
 /*soru alanı*/
 .buyuksorualani{
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   text-align: center;
   align-self: center;
@@ -581,8 +580,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10.5em;
-  width: 20.5em;
+  height: 10.5svw;
+  width: 20.5svw;
   background-image: linear-gradient(45deg, rgb(250 205 5), rgb(108 113 35), rgb(15 18 33));
   border-radius: 10px;
   box-shadow: 0 0 15px rgb(24 23 26 / 50%);
@@ -596,8 +595,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10.5em;
-  width: 20.5em;
+  height: 10.5svw;
+  width: 20.5svw;
   opacity: .75;
   border-radius: 30px;
   box-shadow: 0 0 15px rgb(232 229 237 / 50%);
@@ -607,8 +606,8 @@ body{
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: 10em;
-  width: 20em;
+  height: 10svw;
+  width: 20svw;
   background-image: linear-gradient(45deg, #1b1f3161, #14165578);
   border-radius: 10px;
   backdrop-filter: blur(20px);
@@ -620,8 +619,8 @@ body{
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: 10em;
-  width: 20em;
+  height: 10svw;
+  width: 20svw;
   background-image: linear-gradient(45deg, #1b1f3161, #14165578);
   border-radius: 30px;
   backdrop-filter: blur(50px);
@@ -634,13 +633,14 @@ body{
   text-shadow: 0 0 10px rgb(25 26 26 / 50%);
 }
 .sorualani{
+  margin-top: 7.5svh;
   display: none;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  width: 28em;
-  height: 45em;
+  width: 60svw;
+  height: 35svw;
   background-color: rgb(0 0 48 / 25%);
   backdrop-filter: blur(50px);
   border-radius: 1.25em;
@@ -668,12 +668,13 @@ body{
   text-align: center;
   display: flex;
   position: relative;
-  height: 15em;
-  width: 25em;
-  border-radius: 2em;
+  height: 70%;
+  width: 30%;
+  border-radius: 2svw;
   backdrop-filter: blur(15px);
   box-shadow: rgba(0, 0, 0, .7) 0 0 25px;
   transition: all .25s ease-in-out;
+  padding: 5%;
 }
 .soru:hover{
   align-items: center;
@@ -681,30 +682,27 @@ body{
   text-align: center;
   display: flex;
   position: relative;
-  height: 15em;
-  width: 25em;
-  border-radius: 2em;
   backdrop-filter: blur(15px);
   box-shadow: rgb(240 56 56 / 70%) 0 0 25px;
 }
 #sorubaslik{
-  font-size: 20px;
+  font-size: calc(1em + 1svw);
   font-family: system-ui, helvetica;
   color: rgb(240, 232, 255);
   font-weight: bold;
-  margin: 0 .5em 0 .5em;
+  margin: 0 .5svw 0 .5svw;
 }
 .siklar{
-  margin-top: .5em;
+  margin-top: .5svw;
   display: grid;
-  grid-template-rows: 5em 5em 5em 5em 5em;
+  grid-template-rows: 6svw 6svw 6svw 6svw 6svw;
   align-items: center;
   justify-content: center;
 }
 .suk{
-  height: 4em;
-  width: 25em;
-  border-radius: 1em;
+  height: 4svw;
+  width: 25svw;
+  border-radius: 1svw;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -717,9 +715,9 @@ body{
   opacity: 1;
 }
 .suk:hover{
-  height: 4em;
-  width: 25em;
-  border-radius: 1em;
+  height: 4svw;
+  width: 25svw;
+  border-radius: 1svw;
   display: flex;
   text-align: center;
   justify-content: center;
