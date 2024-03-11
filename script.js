@@ -339,6 +339,11 @@ var dogrucvpsikki;
 const correct = new Audio('correct.mp3');
 const wrong = new Audio('wrong.mp3');
 function start(){
+  if(document.querySelector(".ust").style.animation == "ustukapat"){
+    document.querySelector(".sorualani").style.marginTop="0";
+  } else{
+    document.querySelector(".sorualani").style.marginTop="7.5svh";
+  }
   document.querySelectorAll(".cevap").forEach((cevap) => {
     document.querySelector(".cevap").remove();
     document.querySelector(".suk").remove();

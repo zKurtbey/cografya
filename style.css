@@ -633,7 +633,6 @@ body{
   text-shadow: 0 0 10px rgb(25 26 26 / 50%);
 }
 .sorualani{
-  margin-top: 7.5svh;
   display: none;
   flex-direction: row;
   justify-content: space-evenly;
