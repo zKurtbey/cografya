@@ -111,8 +111,12 @@ var sorular = [
   "Türkiye'nin en büyük akarsu gölü nedir?",
   "Türkiye'nin en önemli endüstri bölgesi nedir?",
   "Türkiye'nin en uzun demiryolu hattı nedir?",
-  "Türkiye'nin en büyük milli parkı nedir?",
-  "Türkiye'nin en büyük ovası nedir?"
+  "Türkiye'nin en büyük ovası nedir?",
+  "Karstik yer şekilleri, hangi tür kayaçların kimyasal çözünmesiyle oluşur?",
+  "Jeolojik faaliyetler sonucunda deniz seviyesinden yükselen ve kara parçalarını oluşturan yükseltilere ne denir?",
+  "Deniz seviyesinin altında kalan, yer kabuğunun çökmesi veya deniz seviyesinin yükselmesi sonucunda oluşan düzlüklere ne ad verilir?",
+  "Çok yıllık rüzgar ve akarsu aşındırması sonucunda oluşan derin vadilere ne denir?",
+  "Volkanik patlamalar sonucunda oluşan ve genellikle dağların zirvesinde yer alan çukurluklara ne ad verilir?"
 ];
 
 var siklar = [
@@ -206,8 +210,12 @@ var siklar = [
   "Manyas Gölü",
   "Marmara",
   "Ankara-Kars",
-  "Yozgat Bozok Milli Parkı",
-  "Çukurova Ovası"
+  "Çukurova Ovası",
+  "Kireç Taşları",
+  "Plato",
+  "Sığ düzlük",
+  "Kanyon",
+  "Krater"
   ];
 var sahtesiklar = [
   "İzmir", "Bursa", "Antalya", "Edirne",
@@ -224,7 +232,7 @@ var sahtesiklar = [
 "Güney Okyanusu", "Baltık", "Karadeniz", "Ak Deniz",
 "Fortaleza", "Salvador", "Brasília", "Recife",
 "Sierra Nevada", "Andlar", "Cascades", "Ural",
-"Ras Dashen", "Ras Deshen", "Kenya", "Simien",
+"Ras Dashen", "Kaz Dağları", "Kenya", "Simien",
 "Sevan", "Urmia", "Tuz", "Hazar",
 "Illimani", "Ojos del Salado", "Huascarán", "Hiçbiri",
 "Lena", "Amur", "Hiçbiri", "Ob",
@@ -251,7 +259,7 @@ var sahtesiklar = [
 "Kolkata", "Hiçbiri", "Bangalore", "Hyderabad",
 "Umman", "Yemen", "Katar", "Birleşik Arap Emirlikleri",
 "Täschhorn", "Nordend", "Lyskamm", "Dom",
-"Liffey", "Shannon", "Erne", "Lee",
+"Liffey", "Tuna", "Erne", "Lee",
 "Tambora", "Kerinci", "Jaya", "Rantemario",
   "Erciyes", "Cilo", "Süphan", "Davraz",
   "Sakarya", "Fırat", "Meriç", "Yeşilırmak",
@@ -300,8 +308,12 @@ var sahtesiklar = [
   "Van Gölü", "Sapanca Gölü", "Uluabat Gölü", "Beyşehir Gölü",
   "Akdeniz", "İç Anadolu", "Ege", "Karadeniz",
   "Samsun-Sinop", "İstanbul-Ankara", "Eskişehir-Konya", "Ankara-Sivas",
-  "Kent Milli Parkı", "Olimpos-Beydağları Milli Parkı", "Kazdağları Milli Parkı", "Göreme Milli Parkı",
-  "Bafra Ovası", "Konya Ovası", "Thrakya Ovası", "Antalya Ovası"
+  "Bafra Ovası", "Konya Ovası", "Thrakya Ovası", "Antalya Ovası",
+  "Tuf", "Kömür", "Fiziksel", "Hiçbiri",
+  "İl", "Ada", "Köy", "İlçe",
+  "Derin düzlük", "Geniş düzlük", "Hiçbiri", "Yayla",
+  "Yamaç", "Uçurum", "Falez", "Maden",
+  "Gayzer", "Obsidyen", "Meteor", "Boşluk"
 ];
   const suklar = document.querySelectorAll(".suk");
   var cvpdgr;
